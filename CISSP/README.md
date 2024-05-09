@@ -13,6 +13,7 @@
 ## Exam Format
 - 3 hours
 - Minimum 100 to maximum 150 items
+- HAVE to score at LEAST 70% on each domain
 
 ## Requirements to take the exam
 - Candidates must have a _minimum of five (5) years_ cumulative, full-time experience in _two (2) or more of the eight (8) domains_ of the current CISSP Exam Outline.
