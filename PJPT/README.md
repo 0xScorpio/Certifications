@@ -1,3 +1,4 @@
+## Exam Outline
 The PJPT Exam is a four (4) day exam:
 - 2 days (48 hours) of allocated time for practical hacking
 - 2 days (48 hours) of allocated time for report writing
