@@ -1,14 +1,14 @@
 ## Exam Weight
 | Domains | Average Weight [%] | April 15th 2024 |
 | --- | --- | --- |
-| Security & Risk Management | 15% | 16% |
+| Security & Risk Management | 15% | 16% <--- |
 | Asset Security | 10% | 10% |
 | Security Architecture/Engineering | 13% | 13% |
 | Communications/Network Security | 13% | 13% |
 | Identity & Access Management | 13% | 13% |
 | Security Assessment & Testing | 12% | 12% |
 | Security Operation | 13% | 13% |
-| Software Development Security | 11% | 10% |
+| Software Development Security | 11% <---| 10% |
 
 ## Requirements to take the exam
 - Candidates must have a _minimum of five (5) years_ cumulative, full-time experience in _two (2) or more of the eight (8) domains_ of the current CISSP Exam Outline.
