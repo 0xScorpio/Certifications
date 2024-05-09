@@ -10,6 +10,10 @@
 | Security Operation | 13% | 13% |
 | Software Development Security | 11% <---| 10% |
 
+## Exam Format
+- 3 hours
+- Minimum 100 to maximum 150 items
+
 ## Requirements to take the exam
 - Candidates must have a _minimum of five (5) years_ cumulative, full-time experience in _two (2) or more of the eight (8) domains_ of the current CISSP Exam Outline.
 - Earning a post-secondary degree (bachelors or masters) in computer science, information technology (IT) or related fields may satisfy up to one (1) year of the required experience.
