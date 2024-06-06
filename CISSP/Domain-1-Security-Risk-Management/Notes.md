@@ -20,5 +20,9 @@ Finding the right mix of CIA is a balancing act since:
 
 **Least-Privilege**: Minimum necessary access // Need-To-Know
 
+## Governance (C-level objectives) vs Management (plan, build, meet objectives)
+![image](https://github.com/0xScorpio/Certifications/assets/140411254/7742d50d-698e-4cdb-ac5a-e79e4f9157b9)
+
+Bottom-up vs Top-Down (exam) -> C-Level Executives are ULTIMATELY LIABLE.
 
     
