@@ -25,4 +25,11 @@ Finding the right mix of CIA is a balancing act since:
 
 Bottom-up vs Top-Down (exam) -> C-Level Executives are ULTIMATELY LIABLE.
 
+### Governance standards and control frameworks
+- PCI-DSS: Payment Card Industry Data Security Standard - debit, credit cards
+- OCTAVE: Operationally Critical Threat, Asset and Vulnerability Evaluation - self directed risk management
+- COBIT: Control Objectives for Information and related Technology - Goals for IT, stakeholder needs mapped to IT-related goals
+- COSO: Committee Of Sponsoring Organizations - Goals for entire organization
+- ITIL: Information Technology Infrastructure Library - IT Service Management
+- FRAP: Facilitated Risk Analysis Process - analyze a specific application/system with internal employees and prioritize.
     
