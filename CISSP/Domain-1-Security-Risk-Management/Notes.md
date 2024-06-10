@@ -3,6 +3,7 @@
 - [DAD Triad](#opposing-dad-triad)
 - [IAAA](#iaaa)
 - [Governance vs Management](#governance-vs-management)
+- [Governance: Standards and Control Frameworks](#governance-standards-and-control-frameworks)
 
 # CIA Triad
 - **Confidentiality**: Ensuring no unauthorized user can access the data.
