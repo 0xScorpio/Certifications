@@ -3,7 +3,7 @@
 - [DAD Triad](#opposing-dad-triad)
 - [IAAA](#iaaa)
 - [Governance vs Management](#governance-vs-management)
-- [Governance: Standards and Control Frameworks](#governance-standards-and-control-frameworks)
+- [Governance: Standards and Control Frameworks](#governance:-standards-and-control-frameworks)
 
 # CIA Triad
 - **Confidentiality**: Ensuring no unauthorized user can access the data.
@@ -32,7 +32,7 @@ Finding the right mix of CIA is a balancing act since:
 
 Bottom-up vs Top-Down (exam) -> C-Level Executives are **ULTIMATELY LIABLE**.
 
-# Governance standards and control frameworks
+# Governance: Standards and Control Frameworks
 - PCI-DSS: Payment Card Industry Data Security Standard - debit, credit cards
 - OCTAVE: Operationally Critical Threat, Asset and Vulnerability Evaluation - self directed risk management
 - COBIT: Control Objectives for Information and related Technology - Goals for IT, stakeholder needs mapped to IT-related goals
