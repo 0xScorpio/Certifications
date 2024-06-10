@@ -39,5 +39,9 @@ Bottom-up vs Top-Down (exam) -> C-Level Executives are **ULTIMATELY LIABLE**.
 - COSO: Committee Of Sponsoring Organizations - Goals for entire organization
 - ITIL: Information Technology Infrastructure Library - IT Service Management
 - FRAP: Facilitated Risk Analysis Process - analyze a specific application/system with internal employees and prioritize.
-
-#
+- ISO 27000 series:
+  - ISO 27001: Establish, implement, control and improvement of ISMS. (PLAN, DO, CHECK, ACT)
+  - ISO 27002: Practical advice on how to implement security controls. Uses 10 domains for ISMS.
+  - ISO 27004: Provides metrics for measuring the success of your ISMS.
+  - ISO 27005: Standards-based approach to risk management.
+  - ISO 27799: Directives on how to protect PHI (Protected Health Information).
