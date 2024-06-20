@@ -121,6 +121,21 @@ While an organization can do nothing if their Trade Secret is discovered, HOW it
 - Cyber Squatting: Buying a URL you know someone else will need (gray area legal)
 - Typo Squatting: Buying a URL that is very close to real website name (can be illegal)
 
+# US Rules, Regulations and Laws
+- HIPAA: Health Insurance Portability and Accountability Act.
+  - Strict privacy and security rules on handling PHI (Protected Health Information)
+- Security Breach Notification Laws
+  - NOT Federal, all 50 states have individual laws.
+- ECPA: Electronic Communications Privacy Act
+  - Protection of electronic communications against warrantless wiretapping.
+  - This act was weakened by the Patriot Act.
+- PATRIOT Act of 2001:
+  - Expands law enforcement electronic monitoring capabilities.
+  - Allows search and seizure without immediate disclosure.
+- CFAA: Computer Fraud and Abuse Act, Title 18 Section 1030
+  - Used to prosecute computer crimes.
+
+
 
 
   
