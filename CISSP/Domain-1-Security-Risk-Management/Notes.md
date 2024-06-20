@@ -62,7 +62,68 @@ Bottom-up vs Top-Down (exam) -> C-Level Executives are **ULTIMATELY LIABLE**.
 - Religious Law
 
 Due Diligence: research, plan
+
 Due Care: action, do
 
 Negligence: opposite of Due Care.
 If a system under your control is compromised and you can prove you did your Due Care, you are most likely not liable.
+
+# Evidence
+Types of evidence:
+- Real Evidence: tangible and physical (hard disks, NOT the data in them)
+- Direct Evidence: testimony from a first-hand witness / experiences with all 5 senses
+- Circumstantial Evidence: evidence that supports circumstance or other evidence
+- Corroborative Evidence: evidence that supports facts or elements of the case
+
+Definitions
+- Hearsay: Not first-hand knowledge - normally inadmissible in a case.
+- Best Evidence Rule: accurate, complete, relevant, authentic and convincing.
+- Secondary Evidence: suchs as logs and documents from systems.
+- Evidence Integrity: Hashes, any forensics is done on copies and NEVER on original.
+- Chain of Custody: proves the integrity of the data
+  - WHO handled it?
+  - WHEN did they handle it?
+  - WHAT did they do with it?
+  - WHERE did they handle it?
+
+Reasonable Searches:
+- The 4th Amendment on the US Constitution protects citizens from unreasonable search and seizure by the government.
+- The court will determine if evidence was obtained legally.
+- Exceptions apply if there is an immediate threat to human life or of evidence destruction.
+
+Entrapment: (illegal and unethical) when someone is persuaded to commit a crime they had no intention of committing and is then charged for it.
+
+Enticement: (legal and ethical) makiing committing a crime more enticing, but the person has already broken the law or at least decided to do so. e.g. Honeypots.
+
+# Intellectual Property
+- Copyright:
+  - Automatically granted and lasts 70 years after creator's death or 95 years after creation by/for corporations.
+- Trademarks:
+  - Brand names, logos, slogans - valid for 10 years at a time, can be renewed indefinitely. 
+- Patents:
+  - Protects inventions for 20 years (normally)
+    - Cryptography algorithms can be patented. Inventions must be:
+      - Novel: new
+      - Useful: possible to use and useful
+      - Nonobvious: inventive work involved
+- Trade Secrets
+
+## Attacks on Intellectual Property
+Copyright
+- Piracy
+- Copyright infringement
+Trademarks
+- Counterfeiting
+Patents
+- Patent infringement
+Trade Secrets
+While an organization can do nothing if their Trade Secret is discovered, HOW it is done can be illegal.
+- Cyber Squatting: Buying a URL you know someone else will need (gray area legal)
+- Typo Squatting: Buying a URL that is very close to real website name (can be illegal)
+
+
+
+  
+  
+
+  
