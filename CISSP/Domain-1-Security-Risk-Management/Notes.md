@@ -4,6 +4,7 @@
 - [IAAA](#iaaa)
 - [Governance vs Management](#governance-vs-management)
 - [Governance: Standards and Control Frameworks](#governance-standards-and-control-frameworks)
+- [Laws and Regulations](#laws-and-regulations)
 
 # CIA Triad
 - **Confidentiality**: Ensuring no unauthorized user can access the data.
@@ -45,3 +46,23 @@ Bottom-up vs Top-Down (exam) -> C-Level Executives are **ULTIMATELY LIABLE**.
   - ISO 27004: Provides metrics for measuring the success of your ISMS.
   - ISO 27005: Standards-based approach to risk management.
   - ISO 27799: Directives on how to protect PHI (Protected Health Information).
+
+# Laws and Regulations
+- Criminal Law
+  - SOCIETY is the victim and proof is BEYOND A REASONABLE DOUBT.
+  - Incarceration, death and financial fines to PUNISH/DETER.
+- Civil/Tort Law
+  - INDIVIDUALS/ORGANIZATIONS are the victim and proof is the MAJORITY OF PROOF.
+  - Financial fines to compensate the victim(s).
+- Administrative Law
+  - Laws enacted by government agencies (FDA, HIPAA, FAA, etc.)
+- Private Regulations
+  - Compliance is required by contract (PCI-DSS, etc.)
+- Customary Law
+- Religious Law
+
+Due Diligence: research, plan
+Due Care: action, do
+
+Negligence: opposite of Due Care.
+If a system under your control is compromised and you can prove you did your Due Care, you are most likely not liable.
