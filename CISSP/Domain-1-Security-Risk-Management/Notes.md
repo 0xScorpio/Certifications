@@ -31,6 +31,7 @@ Finding the right mix of CIA is a balancing act since:
 # Governance vs Management
 ![image](https://github.com/0xScorpio/Certifications/assets/140411254/7742d50d-698e-4cdb-ac5a-e79e4f9157b9)
 
+> [!NOTE]
 Bottom-up vs Top-Down (exam) -> C-Level Executives are **ULTIMATELY LIABLE**.
 
 # Governance: Standards and Control Frameworks
@@ -61,10 +62,13 @@ Bottom-up vs Top-Down (exam) -> C-Level Executives are **ULTIMATELY LIABLE**.
 - Customary Law
 - Religious Law
 
-Due Diligence: research, plan
+> [!NOTE]
+Due Diligence: Research, Plan
 
-Due Care: action, do
+> [!NOTE]
+Due Care: Action, Do
 
+> [!NOTE]
 Negligence: opposite of Due Care.
 If a system under your control is compromised and you can prove you did your Due Care, you are most likely not liable.
 
@@ -109,14 +113,17 @@ Enticement: (legal and ethical) makiing committing a crime more enticing, but th
 - Trade Secrets
 
 ## Attacks on Intellectual Property
-Copyright
+Copyright:
 - Piracy
 - Copyright infringement
-Trademarks
+
+Trademarks:
 - Counterfeiting
-Patents
+
+Patents:
 - Patent infringement
-Trade Secrets
+
+Trade Secrets:
 While an organization can do nothing if their Trade Secret is discovered, HOW it is done can be illegal.
 - Cyber Squatting: Buying a URL you know someone else will need (gray area legal)
 - Typo Squatting: Buying a URL that is very close to real website name (can be illegal)
