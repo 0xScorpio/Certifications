@@ -131,6 +131,8 @@ While an organization can do nothing if their Trade Secret is discovered, HOW it
 # US Rules, Regulations and Laws
 - HIPAA: Health Insurance Portability and Accountability Act.
   - Strict privacy and security rules on handling PHI (Protected Health Information)
+> [!NOTE]
+> PRIVACY, SECURITY and BREACH NOTIFICATION rule.
 - Security Breach Notification Laws
   - NOT Federal, all 50 states have individual laws.
 - ECPA: Electronic Communications Privacy Act
