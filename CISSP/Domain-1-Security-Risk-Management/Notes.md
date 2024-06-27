@@ -129,20 +129,57 @@ While an organization can do nothing if their Trade Secret is discovered, HOW it
 - Typo Squatting: Buying a URL that is very close to real website name (can be illegal)
 
 # US Rules, Regulations and Laws
-- HIPAA: Health Insurance Portability and Accountability Act.
+- **HIPAA: Health Insurance Portability and Accountability Act.**
   - Strict privacy and security rules on handling PHI (Protected Health Information)
 > [!NOTE]
 > PRIVACY, SECURITY and BREACH NOTIFICATION rule.
 - Security Breach Notification Laws
   - NOT Federal, all 50 states have individual laws.
-- ECPA: Electronic Communications Privacy Act
+- **ECPA: Electronic Communications Privacy Act**
   - Protection of electronic communications against warrantless wiretapping.
   - This act was weakened by the Patriot Act.
-- PATRIOT Act of 2001:
+- **PATRIOT Act of 2001**:
   - Expands law enforcement electronic monitoring capabilities.
   - Allows search and seizure without immediate disclosure.
-- CFAA: Computer Fraud and Abuse Act, Title 18 Section 1030
+  - Allows ISPs to voluntarily share information of their users to law enforcement.
+  - Eases the restrictions of foreign intelligence gathering within the US.
+- **CFAA: Computer Fraud and Abuse Act, Title 18 Section 1030**
   - Used to prosecute computer crimes.
+- **GLBA: Gramm-Leach-Bliley Act**
+  - Applies to financial institutions: driven by the Federal Financial Institutions.
+- **SOX: Sarbanes-Oxley Act of 2002**
+  - Directly related to the accounting scandals in the late 90s.
+- **PCI-DSS: Payment Card Industry Data Security Standard**
+  - The standard applies to carholder data for both credit and debit cards.
+ 
+# GDPR (General Data Protection Regulation)
+- Data protection and privacy for all individuals within the EU and EEA.
+- It does NOT matter where we are based / if we have clients in EU, we have to adhere to GDPR.
+- Violators of the GDPR may be fined up to 20 million euros or up to 4% of the annual worldwide turnover of the preceding financial year in case of an enterprise, WHICHEVER IS GREATER!
+
+**Restrictions**: Lawful interception, national security, military, police or the justice system.
+  
+**Right to access**: Data controllers must be able to provide a free copy of an individual's data if requested.
+
+**Right to erasure**: All users have a 'right to be forgotten'.
+
+**Data portability**: All users will be able to request access to their data 'in an electronic format'.
+
+**Data breach notification**: Users/Data controllers must be notified of data breaches within 72 hours.
+
+**Privacy by design**: Ensure data processes are secure and that are 'absolutely necessary for the completion of duties'.
+
+**Data Protection Officers**: Companies whose activities involve data processing and monitoring MUST APPOINT a Data Protection Officer.
+
+> [!WARNING]
+> REMINDER TO DO SOME EXTRA RESEARCH FOR CONTEXT AND UNDERSTANDING!
+> 
+# Legacy laws between EU and US
+- **EU Data Protection Directive**
+- **EU-US Safe Harbor**
+- **Privacy Shield**
+
+
 
 
 
