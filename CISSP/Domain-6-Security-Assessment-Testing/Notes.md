@@ -67,4 +67,28 @@ Audit record management typically faces 5 distinct problems:
 5. Audit records are only review once an incident occurs.
 
 # Audit Strategies for Cloud or Hybrid environments
+- Data sovereignty: where our data can be stored and processed based on laws we have to follow.
+- Shared Responsibility Model: The cloud service provider and customer would be responsibly for different aspects.
+  - IaaS: customer responsible for OS, applications and data.
+  - PaaS: CSP responsible for OS, middleware, hardware.
+  - SaaS: CSP is responsible for everything except data and sometimes access control.
+
+## Hybrid environments
+Best practices:
+- Have clear objectives and scope.
+- Manual testing is important.
+- Review policies, procedures and documentation.
+- Engage the right stakeholders.
+- Track and remediate audit findings and reassess progress.
+
+# Penetration Testing stuff
+- War Dialing: Uses a modem to dial a series of phone numbers, looking for an answering modem carrier tone, the pentester then attempts to access the answering system.
+- War Driving (AP mapping)
+- Network attacks
+- Wireless tests
+- Exception Handling
+- Ethical Disclosure
+
+# Software Testing
+  
 
