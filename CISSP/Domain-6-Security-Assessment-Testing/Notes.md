@@ -90,5 +90,6 @@ Best practices:
 - Ethical Disclosure
 
 # Software Testing
-  
+- SAST: passively testing code when it is not running.
+- DAST: actively testing code when it is running.
 
