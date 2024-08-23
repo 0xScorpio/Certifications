@@ -57,6 +57,16 @@ POST https://graph.microsoft.com/v1.0/security/runHuntingQuery
 ![image](https://github.com/user-attachments/assets/696b5b5c-629e-4416-8ea8-3705ac893096)
 
 
+# Knowledge Check
+1. Which Microsoft Defender XDR solution can detect an Active Directory Domain compromise?
+   ANS: **Microsoft Defender for Identity**
+
+2. Which Microsoft Defender XDR solution can detect a phishing email?
+   ANS: **Microsoft Defender for Office 365**
+
+3. Which Microsoft Defender XDR solution can detect a malware installation?
+   ANS: **Microsoft Defender for Endpoint**
+
 
 
 
