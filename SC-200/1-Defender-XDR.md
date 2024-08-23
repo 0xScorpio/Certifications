@@ -1,4 +1,4 @@
-## Oveview of Defender XDR
+# Oveview of Defender XDR
 
 ![image](https://github.com/user-attachments/assets/0801b78a-b6c4-4f0d-83c7-42a14de71781)
 
@@ -41,5 +41,26 @@ POST https://graph.microsoft.com/v1.0/security/runHuntingQuery
 ``
 
 ![image](https://github.com/user-attachments/assets/bbc31b39-9074-449e-aa18-6853aff3acde)
+
+# Investigating incidents using Sentinel/XDR
+
+![image](https://github.com/user-attachments/assets/d2e88506-3d36-4447-86f9-a81ebb4d7b92)
+
+![image](https://github.com/user-attachments/assets/20213cc9-4033-4ac9-94a4-dd571256e873)
+
+![image](https://github.com/user-attachments/assets/b244e6ec-6559-4896-b715-ea00fc7da48e)
+
+![image](https://github.com/user-attachments/assets/eadbd8a8-d710-493a-8d0c-071d2cd9d8a3)
+
+![image](https://github.com/user-attachments/assets/f3a95c7d-05f9-471e-a499-1486740ae268)
+
+![image](https://github.com/user-attachments/assets/696b5b5c-629e-4416-8ea8-3705ac893096)
+
+
+
+
+
+
+
 
 
