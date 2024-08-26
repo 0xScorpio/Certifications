@@ -54,3 +54,8 @@ Ensure that evidence is acquired in a legal manner.
 
 Despite the 4th Amendment, if anything is subpoenaed, search warranted, turned over voluntarily and/or in exigent circumstances (immediate danger of being destroyed), law enforcement is given the rgith to bypass it.
 
+### Disk Forensics
+There are 4 types of disk-based forensic data:
+- Allocated Space: The portions of the disk that are marked as actively containing data.
+- Unallocated Space: When a file is deleted, the parts of the disk that held the deleted file are marked as unallocated and made available for use. (This is also why deleting a file does nothing, the data is still there until overwritten.
+- 
