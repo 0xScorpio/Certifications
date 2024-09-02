@@ -7,6 +7,7 @@
 - [Laws and Regulations](#laws-and-regulations)
 - [International Agreements and Guidelines](#international-agreements-and-guidelines)
 - [Third-Party, Acquisitions and Divesture Security](#third-party-acquisitions-and-divesture-security)
+- [ISC2 Code of Ethics](#isc2-code-of-ethics)
 
 # CIA Triad
 - **Confidentiality**: Ensuring no unauthorized user can access the data.
@@ -209,8 +210,19 @@ Export/Import controls for Conventional Arms and **Dual-Use** Goods and Technolo
 ![image](https://github.com/user-attachments/assets/24d1c1b7-34da-40a8-8a23-5a40c025294e)
 
 # Third-Party, Acquisitions and Divesture Security
-test
-  
-  
+As our organizations rely more on 3rd party vendors for services and applications, we need to ensure their security standards, measures and controls meet the security standards of our organization.
+- Procurement: When we buy products or services from a 3rd party, security is included.
+- SLA: Specific terms such as uptime are laid out.
+- Industry Standard Attestion: must be accredited to the standards of your industry (ISO, SOC, PCI-DSS, etc.)
+- Acquisitions: How do you ensure their security standards are high enough and data availability during transition?
+- Divestures: Your organization is being split up. How do we ensure no data crosses boundaries?
+
+# ISC2 Code of Ethics
+
+![image](https://github.com/user-attachments/assets/62e5ef9e-1213-4895-bb64-30858b9ebfe2)
+
+![image](https://github.com/user-attachments/assets/53389870-4ca7-4b11-90d1-2d5e506773b0)
+
+![image](https://github.com/user-attachments/assets/5d727438-656f-49df-a01c-5b8d3d332585)
 
   
