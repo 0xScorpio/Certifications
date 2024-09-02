@@ -239,6 +239,11 @@ As our organizations rely more on 3rd party vendors for services and application
 
 # Information Security Governance
 
+![image](https://github.com/user-attachments/assets/0c347a16-6327-4a17-9aaa-81f48d0e652e)
+
+![image](https://github.com/user-attachments/assets/16698709-74b0-4c2b-a542-6189358978dc)
+
+
 # Access Control Categories and Types
 
 # Risk Management
