@@ -6,6 +6,7 @@
 - [Governance: Standards and Control Frameworks](#governance-standards-and-control-frameworks)
 - [Laws and Regulations](#laws-and-regulations)
 - [International Agreements and Guidelines](#international-agreements-and-guidelines)
+- [Third-Party, Acquisitions and Divesture Security](#third-party,-acquisitions=and-divesture-security)
 
 # CIA Triad
 - **Confidentiality**: Ensuring no unauthorized user can access the data.
@@ -203,8 +204,12 @@ Export/Import controls for Conventional Arms and **Dual-Use** Goods and Technolo
   - If it is too strong, it can't be broken; governments want to be able to spy on their citizens.
   - Companies have to make "country-specific" products with different encryption standards.
 
+![image](https://github.com/user-attachments/assets/5f6455f6-00d0-47c7-8f11-5511e5da6c41)
 
+![image](https://github.com/user-attachments/assets/24d1c1b7-34da-40a8-8a23-5a40c025294e)
 
+# Third-Party, Acquisitions and Divesture Security
+test
   
   
 
