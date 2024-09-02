@@ -6,7 +6,7 @@
 - [Governance: Standards and Control Frameworks](#governance-standards-and-control-frameworks)
 - [Laws and Regulations](#laws-and-regulations)
 - [International Agreements and Guidelines](#international-agreements-and-guidelines)
-- [Third Party, Acquisitions and Divesture Security](#third-party-acquisitions=and-divesture-security)
+- [Acquisitions and Divesture Security](#acquisitions=and-divesture-security)
 
 # CIA Triad
 - **Confidentiality**: Ensuring no unauthorized user can access the data.
@@ -208,7 +208,7 @@ Export/Import controls for Conventional Arms and **Dual-Use** Goods and Technolo
 
 ![image](https://github.com/user-attachments/assets/24d1c1b7-34da-40a8-8a23-5a40c025294e)
 
-# Third-Party, Acquisitions and Divesture Security
+# Acquisitions and Divesture Security
 test
   
   
