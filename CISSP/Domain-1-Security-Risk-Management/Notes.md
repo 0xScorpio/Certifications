@@ -8,6 +8,18 @@
 - [International Agreements and Guidelines](#international-agreements-and-guidelines)
 - [Third-Party, Acquisitions and Divesture Security](#third-party-acquisitions-and-divesture-security)
 - [ISC2 Code of Ethics](#isc2-code-of-ethics)
+- [Information Security Governance](#information-security-governance)
+- [Access Control Categories and Types](#access-control-categories-and-types)
+- [Risk Management](#risk-management)
+- [KGI, KPI, KRI](#kgi-kpi-kri)
+- [Risk Response and Mitigation](#risk-response-and-mitigation)
+- [RACI charts](#raci-charts)
+- [Governance, Risk and Compliance](#governance-risk-and-compliance)
+- [NIST SP 800-53](#nist-sp-800-53)
+- [Risk: Attackers and types of attacks](#risk-attackers-and-types-of-attacks)
+- [Business Continuity Planning](#business-continuity-planning)
+- [Business Impact Analysis](#business-impact-analysis)
+
 
 # CIA Triad
 - **Confidentiality**: Ensuring no unauthorized user can access the data.
@@ -225,4 +237,25 @@ As our organizations rely more on 3rd party vendors for services and application
 
 ![image](https://github.com/user-attachments/assets/5d727438-656f-49df-a01c-5b8d3d332585)
 
-  
+# Information Security Governance
+
+# Access Control Categories and Types
+
+# Risk Management
+
+# KGI, KPI, KRI
+
+# Risk Response and Mitigation
+
+# RACI charts
+
+# Governance, Risk and Compliance
+
+# NIST SP 800-53
+
+# Risk: Attackers and types of attacks
+
+# Business Continuity Planning
+
+# Business Impact Analysis
+
