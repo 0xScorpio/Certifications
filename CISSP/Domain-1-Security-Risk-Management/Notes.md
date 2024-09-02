@@ -208,7 +208,7 @@ Export/Import controls for Conventional Arms and **Dual-Use** Goods and Technolo
 
 ![image](https://github.com/user-attachments/assets/24d1c1b7-34da-40a8-8a23-5a40c025294e)
 
-# Acquisitions and Divesture Security
+# Third-Party, Acquisitions and Divesture Security
 test
   
   
