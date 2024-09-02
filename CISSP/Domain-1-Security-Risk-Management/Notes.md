@@ -6,7 +6,7 @@
 - [Governance: Standards and Control Frameworks](#governance-standards-and-control-frameworks)
 - [Laws and Regulations](#laws-and-regulations)
 - [International Agreements and Guidelines](#international-agreements-and-guidelines)
-- [Third-Party, Acquisitions and Divesture Security](#third-party-acquisitions=and-divesture-security)
+- [Third Party, Acquisitions and Divesture Security](#third-party-acquisitions=and-divesture-security)
 
 # CIA Triad
 - **Confidentiality**: Ensuring no unauthorized user can access the data.
