@@ -5,6 +5,7 @@
 - [Governance vs Management](#governance-vs-management)
 - [Governance: Standards and Control Frameworks](#governance-standards-and-control-frameworks)
 - [Laws and Regulations](#laws-and-regulations)
+- [International Agreements and Guidelines](#international-agreements-and-guidelines)
 
 # CIA Triad
 - **Confidentiality**: Ensuring no unauthorized user can access the data.
@@ -179,8 +180,28 @@ While an organization can do nothing if their Trade Secret is discovered, HOW it
 - **EU-US Safe Harbor**
 - **Privacy Shield**
 
+# International Agreements and Guidelines
+## Organization for Economic Cooperation and Development (OECD) Privacy Guidelines
+- 30 member nations around the world, including the US.
+- Guidelines on the protection of privacy and transborder flows of personal data - issued in 1980.
 
+Eight Driving Principles (aligns with GDPR):
+1. Collection limitation principle
+2. Data quality principle
+3. Purpose specification principle - purpose of collecting data
+4. Use limitation principle - only with conset of subject can data be disclosed
+5. Security safeguards principle - safeguards in place to protect data from general loss or unauthorized access
+6. Openness principle - any practices to personal data needs to be communicated properly
+7. Individual participation principle - which organizations have the subject's data
+8. Accountability principle - organizations are held accountable to comply in the other 7 principles
 
+## Wassenaar Arrangement
+Export/Import controls for Conventional Arms and **Dual-Use** Goods and Technologies
+- 41 countries are a part of the arrangement
+- Cryptography is considered **Dual-Use**:
+  - Iran, Iraq, China, Russia and others have import restrictions on strong cryptography.
+  - If it is too strong, it can't be broken; governments want to be able to spy on their citizens.
+  - Companies have to make "country-specific" products with different encryption standards.
 
 
 
