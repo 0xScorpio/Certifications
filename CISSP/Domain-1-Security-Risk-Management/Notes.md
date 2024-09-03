@@ -243,20 +243,117 @@ As our organizations rely more on 3rd party vendors for services and application
 
 ![image](https://github.com/user-attachments/assets/16698709-74b0-4c2b-a542-6189358978dc)
 
+![image](https://github.com/user-attachments/assets/9c0aa2bc-62b5-41fe-991a-cf69135c4425)
+
+### Policies (Mandatory/Strategic): 
+- Regulatory: Have to follow based on the industry we're in (PCI-DSS, HIPAA, etc).
+- Advisory: Outlines the activities that are acceptable or not acceptable in our organization.
+- Informational: there to inform employees (values, vision, mission, etc).
+
+> [!NOTE]
+> Standards, Guidelines, Procedures and Baselines are all Tactical, while Policies are Strategic
+
+![image](https://github.com/user-attachments/assets/fbbf118e-7b2a-4cd6-99ec-35dcb0d2332f)
 
 # Access Control Categories and Types
 
+### Administrative (Directive) Controls:
+- Organizational policies & procedures
+- Regulation
+- Training and awareness
+- Background checks
+### Technical Controls
+- Hardware, software, firmware
+### Physical Controls
+- Locks, fences, bollards, gates
+
+## Access Control Types
+- Preventative: least privilege, drug tests, IPS, firewalls, encryption
+- Detective: IDS, CCTV, alarms, anti-virus
+- Corrective: AV, patches, IPS
+- Recovery: DR environment, backups, HA environments
+- Deterrent: Fences, guards, lights, signs
+- Compensating: When other controls are impossible or too costly to implement
+ 
 # Risk Management
+
+![image](https://github.com/user-attachments/assets/3f43c126-595b-48b5-9d79-320661630843)
+
+1. Identify risks (Feasibility of threat actors exploiting a vulnerability)
+2. Assessment of each risk (How bad is this risk? Potential impact?)
+3. Risk response and mitigation (How do we want to react to that risk?)
+4. Risk and control monitoring and reporting (Iterative process and feedback)
+
+> [!IMPORTANT]
+> Usually start off identifying risks and assessing them using QUALITATIVE and SUBJECTIVE ratings. If the ratings are high, then we move unto QUANTITATIVE assessments. Notice that this method is time-consuming, hence it can't be done for EACH asset. After a generalized assessment, we then ask ourselves: What tools do we use to achieve our goals?
+
+### Risk Assessment
+- Quantitative and Qualitative Risk Analysis
+- Uncertainty analysis
+- Cost-Benefit Analysis
+- Risk mitigation, transference, acceptance and avoidance
+- NEVER risk rejection
+- Assess current state of countermeasures:
+  - Are they good enough?
+  - How can we improve on them?
+- Leftover risk is residual risk
+
+![image](https://github.com/user-attachments/assets/6d7e1ef9-cbf7-470a-b040-e51d0bed057a)
+
+### Risk Analysis Matrix
+
+![image](https://github.com/user-attachments/assets/71015a95-caab-4040-9e72-5b32b0188bdf)
+
+![image](https://github.com/user-attachments/assets/8e46d1a9-8ce4-4d97-820e-80b0e793af45)
+
+- Asset Value (AV): How much is the asset is worth?
+- Exposure Factor (EF): Percentage of Asset lost?
+- Single Loss Expectancy (SLE = AV * EF): What does it cost if it happens once?
+- Annual Rate of Occurence (ARO): How often will this happen each year?
+- Annualized Loss Expectancy (ALE = ARO * SLE): What it costs per year if we do nothing.
+- Total Cost of Ownership (TCO): upfront + ongoing cost
+
+![image](https://github.com/user-attachments/assets/f6eefdda-421d-4ab2-81e2-5f4fbba7ae69)
 
 # KGI, KPI, KRI
 
+- Key Goal Indicator (KGI): Did we reach our goal, within a budget and timeframe, after an IT process was set?
+- Key Performance Indicator (KPI): How well we're doing with the IT process in enabling the goal to be reached.
+- Key Risk Indicators (KRI): How risky is an activity or IT process?
+
 # Risk Response and Mitigation
+We act on senior management choices, which they made based on our recommendations from the assessment phase. We update the Risk Register, with the mitigations, the risk responses we chose and see if the new risk level is acceptable.
+### Control Monitoring and Reporting
+The process is on-going, this is where we would use the KRIs and KPIs. 
+
+![image](https://github.com/user-attachments/assets/9688c2d1-658d-4b82-8ce6-418352ffa141)
 
 # RACI charts
+Responsible / Accountable / Consulted / Informed
+- The person/people that does the work to complete the task.
+- The person/people accountable for the correct and thorough completion of the task.
+- The person/people who provide information for the task (two-way communication).
+- The people who are kept informed about the task's progress (one-way communication).
+
+![image](https://github.com/user-attachments/assets/6e499b03-d6be-4dfe-be9b-397068475d0b)
 
 # Governance, Risk and Compliance
+- Governance: ensures that IT goals and processes aligns with out business objectives.
+- Risk Management: the process of identifying, assessing and responding to risks.
+- Compliance: conforming with a stated requirement.
 
 # NIST SP 800-53
+Security and Privacy Controls for Information Systems and Organizations (492 pages)
+- Provides detailed security controls for US federal systems (excluding the ones related to national security)
+- Guides us on how to create, operate and maintain security systems
+- Gives us a comprehensive risk-based approach to information security
+
+### NIST 800-53 revision 5:
+![image](https://github.com/user-attachments/assets/1fa25266-f77d-467e-b814-fdc5bd22d812)
+- Inclusion of privacy controls
+- Outcome-based approach
+- Focus on supply chain management
+- Protection against insider threats
 
 # Risk: Attackers and types of attacks
 
