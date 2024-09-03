@@ -355,9 +355,27 @@ Security and Privacy Controls for Information Systems and Organizations (492 pag
 - Focus on supply chain management
 - Protection against insider threats
 
-# Risk: Attackers and types of attacks
+![image](https://github.com/user-attachments/assets/5f18728f-732c-4938-883d-6be4b00ffdac)
+
+![image](https://github.com/user-attachments/assets/04ef1de3-1f7b-4420-ac91-26f4fca743f7)
 
 # Business Continuity Planning
+The process of creating the long-term strategic business plans, policies and procedures for continued operation after a disruptive event.
+BCPs often contain:
+- Continuity of Operations Plan (COOP)
+- Crisis Communications Plan
+- Critical Infrastructure Plan
+- Cyber Incident Response Plan
+- Disaster Recovery Plan (DRP)
+- Information System Contingency Plan (ISCP)
+- Occupant Emergency Plan
+> [!NOTE]
+> These are written ahead of time and continually improved on; an iterative process. Ideally, we write the BCP with input from key staff and sometimes outside BCP consultants.
+
+![image](https://github.com/user-attachments/assets/d90e8f62-32c4-461a-9179-fc46393fbbec)
+
+> [!IMPORTANT]
+> Senior management needs to be involved and committed to the BCP/DRP process. They need to at least be a part of the initiation and the final approval of the plans. In serious disasters, Senior Management or someone from the legal department should talk to the press. Most BCPs and DRPs are often built using the waterfall project management methodology.
 
 # Business Impact Analysis
 
