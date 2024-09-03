@@ -378,4 +378,21 @@ BCPs often contain:
 > Senior management needs to be involved and committed to the BCP/DRP process. They need to at least be a part of the initiation and the final approval of the plans. In serious disasters, Senior Management or someone from the legal department should talk to the press. Most BCPs and DRPs are often built using the waterfall project management methodology.
 
 # Business Impact Analysis
+Identifies critical/non-critical organization systems, functions and activities. A function may be considered as critical if dictated by the law.
 
+For each critical (in scope) system, two values are then assigned:
+- RPO (Recovery Point Objective): The acceptable amount of data to be lost, that still alows us to recover.
+- RTO (Recovery Time Objective): The amount of time to RESTORE the system. [hardware]
+- WRT (Work Recovery Time): How much time is required to CONFIGURE the recovered system. [software]
+- MTD (Maximum Tolerable Downtime / Maximum Allowable Downtime): Must be greater than or equal than RTO + WRT.
+
+![image](https://github.com/user-attachments/assets/df234d3e-e819-4106-a5c0-c665722ed0b5)
+
+### External Dependencies
+Any interruption to an external dependency can affect our processes.
+- Dependency mapping for identifying primary, secondary and tertiary suppliers.
+- Evaluating the criticality of external dependencies based on uniqueness and importance.
+- Impact analysis considering both direct and indirect effects on business.
+- Strategies such as SLAs, contingency planning, and redundancy.
+- Dynamic monitoring and review of dependency maps and impact assessments.
+- Have clear communication and robus relationships with external providers.
