@@ -29,11 +29,18 @@
 - [Personnel Safety](#personnel-safety)
 
 # Security models and concepts
-- Discretionary Access Control (DAC):
-- Mandatory Access Control (MAC):
-- Role Based Access Control (RBAC):
-- Attribute Based Access Control (ABAC):
-- Rule Based Access Control (RUBAC):
+- Discretionary Access Control (DAC): gives subjects full control of objects they have created or been given access to.
+- Mandatory Access Control (MAC): system-enforced control based on subject's clearance and object's labels.
+- Role Based Access Control (RBAC): access to objects based on the role of the subject.
+- Attribute Based Access Control (ABAC): access to objects based on attributes/conditions of the subject/object.
+- Rule Based Access Control (RUBAC): access granted based on IF/THEN logical statements.
+
+### Bell-LaPadula (Confidentiality) (MAC)
+- Simple Security Property: NO READ UP
+- * Security Property: NO WRITE DOWN
+- Strong * Property: NO READ/WRITE UP AND DOWN
+
+- 
 
 # Security evaluation models
 # Secure design principles
