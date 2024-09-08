@@ -110,11 +110,60 @@ The systems contain information at various levels of security classification. Th
 #### Multilevel Security Mode
 ![image](https://github.com/user-attachments/assets/33ee1928-0e08-4325-b580-145f2108e83c)
 
-
-
-
 # Security evaluation models
+To choose the security systems and products we will implement in our organization, we can use evaluation models.
+- The Orange Book: TCSEC / Trusted **Computer System** Evaluation Criteria (1980, DoD, part of Rainbow Books)
+- The Red Book: TNI / Trusted Network Interpretation (addresses Network Systems)
+
+- ITSEC (The European Information Technology Security Evaluation Criteria): First successful international model. Contains a lot of references from the Orange Book, but are both retired now.
+- International Common Criteria (ISO/IEC 15408):
+  - Common Criteria evaluations are performed on BOTH computer security products and systems. It must verify the target's security features through:
+    - Target of Evaluation (TOE): The product/system that is the subject of the evaluation.
+    - Protection Profile (PP): A document which identifies security requirements for a class fo security devices. Products canc omply with more than one PP. Customers looking for particular types of products can focus on those products certified against the PP that meet their requirements.
+    - Security Target (ST): A document that identifies the security principles of the target of evaluation. The ST may have one or more PPs.
+  - Evaluation Assurance Level (EAL): How did the system/product score on testing?
+    - EAL1: Functionally TESTED.
+    - EAL2: Structurally TESTED.
+    - EAL3: Methodically TESTED and CHECKED.
+    - EAL4: Methodically designed, TESTED and REVIEWED.
+    - EAL5: Semi-formally DESIGNED and TESTED.
+    - EAL6: Semi-formally VERIFIED DESIGN and TESTED.
+    - EAL7: Formally VERIFIED DESIGN and TESTED.
+> [!TIP]
+> Fun Stress Method Medical-Doctors Seem Somewhat Verifiably Foolish
+> 
+> Functionally, Structurally, Methodically, Methodically Designed, Semi-formally, Semi-formally Designed Verified, Formally
+
 # Secure design principles
+- Least Privilege: minimum necessary access.
+- Need to Know: Even if you have access, if you don't need to know, then you shouldn't access the data.
+- Separation of Duties: More than 1 individual on one single task - intended to prevent fraud and error.
+- Defense in Depth
+- Secure defaults: think security baselines. Determined by risk analysis and usability tests.
+- Fail securely: If the system fails, it stays at least as secure as it was before the failure
+- Keep it simple
+
+### Threat Modeling
+- PASTA / Process for Attack Simulation and Threat Analysis (Attacked-focused)
+  - 7 step process that aligns business objectives and technical requirements.
+  - Dynamic threat identification, helps develop an asset-centric mitigation strategy.
+    1. Definition of Objectives
+    2. Definition of Technical Scope
+    3. Application Decomposition and Analysis
+    4. Threat Analysis
+    5. Weakness/Vulnerability Analysis
+    6. Attack Modeling & Simulation
+    7. Risk Analysis/Management
+
+- STRIDE / (Developer-focused)
+  - Spoofing: Authenticity
+  - Tampering: Integrity
+  - Repudiation: Non-repudiability
+  - Information disclosure: Confidentiality
+  - DoS: Availability
+  - Elevation of Privilege: Authorization
+
+
 # Secure system design concepts
 # Managing the information system lifecycle
 # Secure Access Service Edge
