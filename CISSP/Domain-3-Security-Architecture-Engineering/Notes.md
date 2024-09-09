@@ -215,8 +215,89 @@ A list of OBJECTS a SUBJECT is allowed to access, groups of OBJECTS/SUBJECTS wit
       - Ring 3: User applications (LEAST Privileged)
         
 # Managing the information system lifecycle
+- Planning: Define scope, objectives and security requirements.
+- Development: Build or buy systems that meet security requirements.
+- Implementation: Install, configure, and test systems in the operational environment.
+- Operations: Daily operations, ensuring effectiveness and security.
+- Retirement: decommission, secure data migration, destruction and environmentally compliant hardware disposal.
+
 # Secure Access Service Edge
+SASE combines network security functions and WAN capabilities for dynamic, secure access. It addresses the limitations of traditional security models, promoting flexibility and scalability.
+
+Key components include:
+- SD-WAN
+- Integrated services (NGFW, CASBs, ZT)
+
+SASE enables consistent security policy enforcement, regardless of user or application location.
+- Requires careful planning and consideration to align with organizational needs.
+- Adoption involves a cultural shift towards integrated, cloud-centric IT model.
+
 # Hardware Architecture
+Newer models have the bus split up into two components.
+- Northbridge (Host bridge): faster than the Southbridge, since it's closer to the CPU. CPU/RAM/Graphics.
+- Southbridge: Peripheral, I/O.
+
+- CPU: brains.
+  - ALU (Arithmetic Logic Unit): performs arithmetic/logic operations. Does the math.
+  - CU (Control Unit): handles fetching (from memory) and execution of instructions by directing the coordinated operations of the ALU, registers and other components. Also sends instructions to the ALU.
+
+CPU instructions:
+- Fetch: Gets the instructions from memory into the processor.
+- Decode: Internally decodes what it is instructed to do.
+- Execute: Takes the add/subtract values from the registers.
+- Store: Stores the result back into another register (retiring the instruction)
+> [!TIP]
+> Pipelining: Combining multiple steps into one process; can Fetch, Decode, Execute, Store in the same clock cycle.
+
+- Interrupt: a signal to the processor emitted by hardware or software indicating an event that needs immediate attention.
+- Process: an executable program and its associated data loaded and running in memory. (Heavy Weight Process / tasks)
+  - Processes may exist in multiple states:
+    - New: process beign created
+    - Ready: process waiting to be executed by the CPU
+    - Running: process being executed by the CPU
+    - Blocked: waiting for I/O
+    - Terminate: completed process
+- Threads: A parent process may spawn additional child processes called threads. (Light Weight Process)
+  - Threads can share memory, resulting in lower overhead compared to HWP.
+ 
+- Multithreading: the ability of a CPU to execute multiple processes/threads concurrently.
+- Multiprocessing: A computer using more than one CPU at a time for a task.
+- Multitasking: Tasks sharing a common resource (1 CPU).
+- Multiprogramming: A computer running more than one program at a time (eg. Word and Chrome)
+  
+- Memory protection: prevents one process from affecting the CIA of another process.
+- Process isolation: logical control that tries to prevent a process from interfering with another process.
+- Hardware segmentation: mapping processes to specific memory locations.
+- Virtual Memory: virtual address mapping between applications and hardware memory. Used for multitasking/processing/swapping, etc.
+- Swapping: moves entire processes from RRAM to Disk (primary memory to secondary memory)
+- Paging: copies a block from RAM to Disk.
+
+- BIOS (Basic Input Output System) (Low-level OS)
+  - runs a basic POST (Power On Self Test) including verifying the integrity of the BIOS testing, memory, system devices.
+  - stored in Read-Only memory (EEPROM) (EPROM on legacy systems)
+  - once the POST process is complete, it locates the boot sector for the OS. Kernel loads and executes, and OS boots.
+
+- WORM media (Write Once Read Many)
+  - early versions of ROM is WORM media (data written once and can't be changed)
+  - CD/DVDs can be WORM media (R) if they are not R/W.
+
+- TPM (Trusted Platform Module)
+  - international standard for a secure cryptoprocessor.
+  - used for RNG, encryption, hashing and secure storage of cryptographic keys and message digests.
+  - most commonly used to ensure boot integrity.
+
+- DEP (Data Execution Prevention)
+  - security feature that can prevent damage to your computer from viruses/threats.
+  - eg. prevents harmful programs from executing code from system memorylocations reserved for Windows and authorized programs.
+
+- ASLR (Address Space Layout Randomization): a memory-protection process for OS; it guards against buffer-overflow attacks by randomizing the location where system executables are loaded into memory.
+
+- Microservices
+  - Really good at a single-task
+  - Not connected or related to other components in the MSA architecture
+  - Resilient and fault-tolerant
+  - If we have distributed deployment, testing can be tedious and complicated.
+
 # Secure OS and software architectures
 # Virtualization, Cloud and Distributed Computing
 # Internet of Things
