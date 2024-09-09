@@ -298,7 +298,28 @@ CPU instructions:
   - Resilient and fault-tolerant
   - If we have distributed deployment, testing can be tedious and complicated.
 
+- Containerization: portability, scalability, deployment speed, enhanced security, cost-effective.
+- Serverless (FaaS): does not hold resources in volatile memory. Cost is based on actual use.
+  - Elasticity: resources expand/contract based on need.
+  - Scalability: we scale resources to meet expected needs.
+
+![image](https://github.com/user-attachments/assets/5afbc5a2-de9f-47f9-8faf-acf77970591d)
+
 # Secure OS and software architectures
+
+### Kernel
+At the core of the OS is the Kernel. At ring 0 (or 3), it interfaces between the OS/applications and hardware.
+- A **monolithic kernal** is one static executable and the kernel runs in supervisor mode.
+- **Microkernels** are mopdular kernels. A microkernel is smaller and has less native functionality than a monolithic kernel. They can add functionality via loadable kernel modules.
+- **Reference monitor** is a core function of the kernel; it handles all access between subjects and objects. It is always on and can't be bypassed.
+
+### Users and File permissions
+- Linux/Unix: rwx permissions which can be set at an Owner, Group or World level.
+- Windows NTFS (New Technology File System):
+  - Read, Write, Read/Execute, Modify, Full Control
+  - It is a type of DAC (Discretionary Access Control): who can access and how they can access it, is at the owner's discretion.
+
+
 # Virtualization, Cloud and Distributed Computing
 # Internet of Things
 # Emanations and Covert Channels
