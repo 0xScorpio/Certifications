@@ -163,8 +163,54 @@ To choose the security systems and products we will implement in our organizatio
   - DoS: Availability
   - Elevation of Privilege: Authorization
 
+- TRIKE (Acceptable Risk Focused)
+  - uses a requirements model
+  - stakeholders, at least the data owner, defines the acceptable use of risk -> gives us a threat model
+  - threats are enumerated and assigned risk values
+  - risk assessment
+
+- DREAD (Abandoned by Microsoft in 2008)
+  - Disaster/Damage
+  - Reproducibility
+  - Exploitability
+  - Affected Users
+  - Discoverability
+ Each category is given a rating from 1 to 10.
+
+- **Trust but verify**: Implicit trust, but we verify you.
+- **Zero-Trust**: Never trust, always verify (NIST SP 800-207 zero trust architecture).
+- Privacy by design: Proactive, not reactive. Privacy as security default.
+- Shared responsibility: mainly regarding cloud computing environments.
 
 # Secure system design concepts
+
+- **Layering**: Separate hardware and software functionality into layers.
+  - Layers can influence layers adjacent, but not past that.
+  - eg. The change of a hard disk to another of the same/different type has no influence on the applications.
+  - eg. Changing an OS may change some applications, but will not affect the hardware.
+> [!TIP]
+> APPLICATIONS <-> OPERATING SYSTEM <-> KERNEL AND DEVICE DRIVERS <-> HARDWARE
+
+- **Abstraction**: Hiding unecessary details from the user - providing seamless experience to user.
+
+- **Security Domains**
+A list of OBJECTS a SUBJECT is allowed to access, groups of OBJECTS/SUBJECTS with similar security requirements.
+  - Kernel mode: (Supervisor Mode): Allowing low-level unrestricted access to memory, CPU, disk, etc.
+  - User mode (Problem mode): No direct access to hardware, it is directed through an API.
+  - Open systems: use open standards and can use standard components from multiple vendors.
+    - Hard disks are built and evaluated to a certain standard.
+    - What most organizations use and is considered more secure.
+  - Closed systems: use proprietary hardware/software. (Security through obscurity)
+    - We may not get hit with the latest vulnerability, but our systems and software have not been as rigorously tested and audited for flaws as open systems and may be easy to gain access to.
+  - Ring Model: 4 ring model that separates Users (Untrusted) from the kernel (Trusted).
+    - The model is slow and rarely used. Most operating systems use only rings 0 and 3.
+    - There is a new addition to the model: Hypervisor mode (-1), sits below the Client kernel in Ring 0.
+      - Ring -1: Hypervisor mode (MOST privileged)
+      - Ring 0: Kernel
+      - Ring 1: Other OS components that do not fit into Ring 0.
+      - Ring 2: Device drivers
+      - Ring 3: User applications (LEAST Privileged)
+        
 # Managing the information system lifecycle
 # Secure Access Service Edge
 # Hardware Architecture
