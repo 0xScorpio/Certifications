@@ -177,6 +177,9 @@ To choose the security systems and products we will implement in our organizatio
   - Discoverability
  Each category is given a rating from 1 to 10.
 
+![image](https://github.com/user-attachments/assets/92170b43-5c04-44d2-8ce5-eda5b379c96d)
+
+
 - **Trust but verify**: Implicit trust, but we verify you.
 - **Zero-Trust**: Never trust, always verify (NIST SP 800-207 zero trust architecture).
 - Privacy by design: Proactive, not reactive. Privacy as security default.
