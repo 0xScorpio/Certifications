@@ -179,7 +179,6 @@ To choose the security systems and products we will implement in our organizatio
 
 ![image](https://github.com/user-attachments/assets/92170b43-5c04-44d2-8ce5-eda5b379c96d)
 
-
 - **Trust but verify**: Implicit trust, but we verify you.
 - **Zero-Trust**: Never trust, always verify (NIST SP 800-207 zero trust architecture).
 - Privacy by design: Proactive, not reactive. Privacy as security default.
@@ -319,8 +318,10 @@ At the core of the OS is the Kernel. At ring 0 (or 3), it interfaces between the
   - Read, Write, Read/Execute, Modify, Full Control
   - It is a type of DAC (Discretionary Access Control): who can access and how they can access it, is at the owner's discretion.
 
-
 # Virtualization, Cloud and Distributed Computing
+- Possibility for multiple clients on the same hardware platform - running under the OS (Ring -1).
+- Traffic between the clients on the host doesn't have to traverse our network.
+
 # Internet of Things
 # Emanations and Covert Channels
 # Web architecture and attacks
