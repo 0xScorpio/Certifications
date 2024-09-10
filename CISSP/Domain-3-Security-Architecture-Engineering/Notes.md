@@ -322,6 +322,10 @@ At the core of the OS is the Kernel. At ring 0 (or 3), it interfaces between the
 - Possibility for multiple clients on the same hardware platform - running under the OS (Ring -1).
 - Traffic between the clients on the host doesn't have to traverse our network.
 
+- **Type 1 Hypervisor**: (BARE METAL) is a part of a virtualization OS that runs on top of host hardware (data center)
+- **Type 2 Hypervisor**: runs of top of regular OS like Windows10 (personal PC)
+
+
 # Internet of Things
 # Emanations and Covert Channels
 # Web architecture and attacks
