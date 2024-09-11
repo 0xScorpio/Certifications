@@ -326,6 +326,7 @@ At the core of the OS is the Kernel. At ring 0 (or 3), it interfaces between the
 - **Type 2 Hypervisor**: runs of top of regular OS like Windows10 (personal PC)
 
 
+
 # Internet of Things
 # Emanations and Covert Channels
 # Web architecture and attacks
