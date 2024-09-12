@@ -325,6 +325,8 @@ At the core of the OS is the Kernel. At ring 0 (or 3), it interfaces between the
 - **Type 1 Hypervisor**: (BARE METAL) is a part of a virtualization OS that runs on top of host hardware (data center)
 - **Type 2 Hypervisor**: runs of top of regular OS like Windows10 (personal PC)
 
+![image](https://github.com/user-attachments/assets/594e73b3-9153-4c52-8916-ac3ae1812b4c)
+
 
 
 # Internet of Things
