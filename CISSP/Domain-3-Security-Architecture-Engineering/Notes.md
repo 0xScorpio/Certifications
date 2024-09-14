@@ -438,10 +438,86 @@ Often electromagnetic emanations!
 - SOA: software design where services are provided to other components by application components, through a communication protocol over a network.
 
 # Database security
+- Polyinstantiation: two or more instances of the same file depending on who accesses it.
+  - The real information may be available to subjects with Top Secret clearance, but different information will be available to staff with Secret or lower clearance.
+
+Securing databases is often through **defense in depth**.
+
 # Mobile security
+
+![image](https://github.com/user-attachments/assets/54044b2c-1d0b-4ab0-858f-ee8d587a0f67)
+
+![image](https://github.com/user-attachments/assets/041d7229-8c30-41ae-bc1e-9ad2b5cc734b)
+
+![image](https://github.com/user-attachments/assets/7b27de60-5697-4dec-af14-e3e72cabf62b)
+
 # Industrial Control Systems
+- SCADA (Supervisory Control And Data Acquisition): control system architecture that uses computers, network data communications and GUIs for high-level process supervisory management.
+- DCS (Distributed Control Systems): control system for a process or plant in which autonomous controllers are distributed throughout the system - with a central operator supervisory control.
+- PLC (Programmable Logic Controller): industrial digital computer adapted for the control of manufacturing processes such as assembly lines, robotic devices, or any acitivity that requires high reliability control, ease of programming, and process fault diagnosis.
+
+SCADA uses the DNP3 protocol (Dsitributed Network Protocol):
+- Primarily for communications between master station (control centers), RTUs (remote terminal units) or IEDs (intelligent electronic devices).
+
+![image](https://github.com/user-attachments/assets/ae4a07fc-123d-46b5-96f5-8765aeedbb2f)
+
+![image](https://github.com/user-attachments/assets/c9d756e8-bc9a-4798-bfa9-cde02166c5ee)
+
+![image](https://github.com/user-attachments/assets/866579dd-53e4-448a-a0ff-08038fbcd5f3)
+
 # Cryptography
+Cryptography supports **Confidentiality**, **Integrity** and **Authentication** via non-repudiation.
+
+Quick terms:
+- Cryptology: science of securing communications.
+- Cryptanalysis: science of breaking encrypted communication.
+- Cipher: cryptographic algorithm.
+- Plaintext: cleartext, unencrypted.
+- Ciphertext: encrypted message.
+- Book Cipher: often uses a book as the key (244.2.13 = page 244, sentence 2, word 13)
+- Running-Key Cipher: uses a well-known test as a key, but uses a previously agreed upon phrase.
+
+- Monoalphabetic Ciphers: substitutes one letter for another.
+- Polyalphabetic Ciphers: substitutes letters starting at different base points per round. (T -> W on 1st round -> D on 2nd, etc.)
+- Frequency Analysis: analyzing the frequency of a certain character based on the language. English (e) is used 12.7% of the time on average. With enough encrypted text, you can possibly break it.
+
+- Confusion: relationship between plaintext and ciphertext - should be as random as possible.
+- Diffusion: how the order of the plaintext should be diffused/dispersed in the ciphertext.
+- Substitution: character replacements.
+- Permutation: transposition -> rearranging characters of the plaintext.
+  
+![image](https://github.com/user-attachments/assets/bf45bb43-a3cd-4cd1-8030-a64a0d3fe3e9)
+
+Vigenere Cipher
+![image](https://github.com/user-attachments/assets/e1dea602-d683-4df8-aaf4-d81a48c5df2a)
+
+- Cipher Disk: 2 concentric disks with alphabets on them with pre-agreed monoalphabetic and disk is turned in pre-agreed direction.
+- Enigma: Rotary based. 3 rotors early on, broken. 4 rotors made it harder.
+- Purple: Japanese rotary, similar to Enigma. Broken with 3 rotors by US, UK, Russia.
+
+- One-time Pads: cryptographic algorithm where plaintext is combined with random key. Unbreakable but impractical, since it can only be used ONCE!
+  - Vernam Cipher: first known one-time pad using bits and XOR.
+
+Jefferson Disk
+![image](https://github.com/user-attachments/assets/643a5809-ea2d-448d-a45e-f471860681e2)
+
+SIGABA
+![image](https://github.com/user-attachments/assets/7c6f9381-96cb-469a-ad89-7e5720dbdb5b)
+
+- COCOM (Coordinating Committee of Multilateral Export Controls) 1947-1994
+  - used to prevent the export of 'critical technologies' from 'Western' countries to 'Iron Curtain' countries during the cold war.
+  - Encryption is considered as 'critical technologies'.
+ 
+## Encryption
+![image](https://github.com/user-attachments/assets/20b56da6-2d7d-484b-84c2-5ff8659ef986)
+
+- **Symmetric Encryption**
+  - DES (Data Encryption Standard) [BROKEN]
+    - DEA (algorithm) or DES (standard) in exam
+    - **64-bit block cipher, 56 bit key, 16 rounds of encryption, uses Fistel.**
+
 # Cryptographic attacks
+
 # Digital Signatures
 # MAC, HMAC, SSL and TLS
 # IPSec and PGP
