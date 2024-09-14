@@ -11,6 +11,7 @@
 - [Virtualization, Cloud and Distributed Computing](#virtualization-cloud-and-distributed-computing)
 - [Internet of Things](#internet-of-things)
 - [Emanations and Covert Channels](#emanations-and-covert-channels)
+- [Malware](#malware)
 - [Web architecture and attacks](#web-architecture-and-attacks)
 - [Database security](#database-security)
 - [Mobile security](#mobile-security)
@@ -319,6 +320,7 @@ At the core of the OS is the Kernel. At ring 0 (or 3), it interfaces between the
   - It is a type of DAC (Discretionary Access Control): who can access and how they can access it, is at the owner's discretion.
 
 # Virtualization, Cloud and Distributed Computing
+### Virtualization
 - Possibility for multiple clients on the same hardware platform - running under the OS (Ring -1).
 - Traffic between the clients on the host doesn't have to traverse our network.
 
@@ -327,11 +329,114 @@ At the core of the OS is the Kernel. At ring 0 (or 3), it interfaces between the
 
 ![image](https://github.com/user-attachments/assets/594e73b3-9153-4c52-8916-ac3ae1812b4c)
 
+> [!TIP]
+> - Clients on the same host should be on the SAME network segment; a host should never house multiple zones.
+> - **VM Escape**: is when an attacker can jump from the host or a client, to another client.
+> - **Hypervisor Security**: If an attacker can get access to the hypervisor, they may gain access to the clients.
+> - **Resource Exhaustion**: Admins may oversubscribe CPU/Memory and may not realize more is needed.
 
+### Cloud Computing
+There are 4 types of cloud computing:
+1. Private
+2. Public
+3. Hybrid
+4. Community
 
+For public cloud computing, the following infrastructures exist:
+
+![image](https://github.com/user-attachments/assets/f06118fa-8e90-443c-846e-53ba8a633c6f)
+
+- IaaS: everything before the OS.
+- PaaS: everything before the application.
+- SaaS: everything except the interaction of the software.
+
+- **Grid Computing**: can make use of resources not currently in use from thousands of computers to perform very complex tasks.
+  - Each node has a smaller subtask
+  - BOINC (Berkeley Open Infrastructure for Network Computing) has over 4 million machines enrolled, used for various research.
+  
+- **P2P / Peer-to-Peer**: any system can be a client and/or server.
+  - Used on torrent networks for sharing of music/movies/etc.
+  - Older versions have centralized index servers, making it easier to disrupt a sharing network; current version is decentralized.
+  - Each client is often also a server and has the index stored. Taking down 10,000 out of 100,000 will have no discernable impact.
+
+- **Thin Clients**: (Boot sequence -> BIOS > POST > TCP/IP > BOOTP/DHCP)
+  - **Diskless Workstation**: a diskless node has all the normal hardware/firmware except the disk and low-level OS that performs the POST. It then downloads the kernel and higher-level OS.
+  - **Thin Client Applications**: we use a web browser to connect to the application on a server. The full application is housed and executed on the server instead of your PC.
+
+### Distributed Computing
+Also known as **Distributed Computing Environment** and **concurrent/parallel computing**.
+DCEs are a collection of individual systems that work together to support a resource or provide an overall service.
+Most end-users see the DCE as a single entity and not as multiple systems.
++ They provide us with horizontal scaling (size, geography, admin), fault tolerance, cost-effectiveness and low latency.
+
+- **High-Performing Computing system (HPC)**
+  - HPCs have 3 components: Compute, Network, Storage
+  - All 3 components must have enough resources to avoid bottleneck issues.
+  - e.g.: supercomputers
+![image](https://github.com/user-attachments/assets/4fe15edb-05e1-4836-8c4a-394af79fce2c)
+
+- **Edge Computing System**:
+  - Think SASE; the procesing data is done as close as possible to where it is needed. This is done by moving the data and computer resources.
+  - Optimizes bandwidth use and lower latency.
+  - e.g.: content delivery networks (CDNs)
+  
 # Internet of Things
+> [!TIP]
+> If you use IoT within an organization/home, segment that part of the network off from everything else!!!
+
+IoT devices are often criticized for their lack of robust security measures, which makes the other options—lack of strong authentication protocols, inability to patch and update software, and inadequate data encryption and privacy protection—common vulnerabilities. These devices often prioritize convenience and functionality over security, leading to potential gaps that attackers can exploit. 
+
 # Emanations and Covert Channels
+Often electromagnetic emanations!
+- Information that can be disseminated from the electrical changes from a system or a wire.
+- It is possible to log a user's keystrokes on a smart phone using a motion sensor.
+- It is unintentional information-bearing signals, which if intercepted and analyzed, can lead to compromise.
+- Electromagnetic emanations can be blocked by heavy metals.
+
+- **Covert Channels**: capability to transfer information using channels not intended to do so.
+  - **Covert Timing Channels**: operations that affect the real-time response observer by the receiver.
+    - e.g.: a wrong username may take 100s to confirm, while a wrong password takes 500ms. Effectively, you get the error, but an attacker is able to tell when they use a correct username due to the delay difference.
+  - **Covert Storage Channels**: Hidden information through the modification of a stored object.
+    - Certain file sizes can have certain meanings.
+    - Attackers can add data in payload if outbound ICMP packets are enabled.
+
+- **Steganography**: Hiding a message within another media (images, videos, etc.)
+- **Digital Watermarks**: encode data into a file (could be hidden using steganography / often used to fingerprint files)
+
+![image](https://github.com/user-attachments/assets/1d297fff-1ce3-440d-b065-ffce04faaed7)
+
+![image](https://github.com/user-attachments/assets/e513064b-13f6-4f80-b6ac-77f9a14a5387)
+
+![image](https://github.com/user-attachments/assets/ad0ee14a-c7e2-410c-8ea1-f050bf998b57)
+
+# Malware
+- **Viruses**: require human interaction, often transmitted via portable devices. When executed, replicates itself by inserting its own code into other programs.
+  - Macro: written in macro languages (word, outlook).
+  - Boot Sector: infects Master Boot Record, ensuring it runs every time the PC boots.
+  - Stealth: tries to hide from OS and AV software.
+  - Polymorphic: changes their **signature** to avoid AV definitions.
+  - Multipart/Multipartite: Spreads across multiple vectors (files, OS, boot sector, etc.)
+ 
+- **Worms**: spreads through **self-propagation**, makes it much easier to spot.
+- **Trojans**: malicious code **embedded** in a 'normal' program.
+- **Rootkits**: replaces parts of the OS/Kernel with malicious payload. User rootkits on Ring 3 and Kernel rootkits on Ring 0.
+- **Logic Bombs**: malicious code that is triggered at a certain **time** or event.
+- **Packers**: programs that compress .exe files, to hide malware from its binary executable format.
+- AV types:
+  - Signature: known signatures using a server-side database, hence needs to be constantly updated.
+  - Heuristic: behavioural based, outliers and abnormal behaviour - can result in a lot of false positives.
+
 # Web architecture and attacks
+- **Applets**: small applications embedded into other software (web browsers).
+  - Executable, downloaded from a server and installed locally on the client.
+  - Often written in **Java** or **ActiveX**(control):
+    - Java: run in sandbox environment - segmenting java from OS -> OS agnostic.
+    - ActiveX: runs with certificates - since it's an MS product, interacts with Windows OS.
+
+![image](https://github.com/user-attachments/assets/9ff3b320-dcc7-4ac4-900b-3547621b5357)
+
+- SOA: software design where services are provided to other components by application components, through a communication protocol over a network.
+
 # Database security
 # Mobile security
 # Industrial Control Systems
