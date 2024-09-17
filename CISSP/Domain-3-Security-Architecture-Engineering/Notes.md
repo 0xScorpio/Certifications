@@ -511,10 +511,21 @@ SIGABA
 ## Encryption
 ![image](https://github.com/user-attachments/assets/20b56da6-2d7d-484b-84c2-5ff8659ef986)
 
-- **Symmetric Encryption**
-  - DES (Data Encryption Standard) [BROKEN]
-    - DEA (algorithm) or DES (standard) in exam
-    - **64-bit block cipher, 56 bit key, 16 rounds of encryption, uses Fistel.**
+### Symmetric Encryption
+- DES (Data Encryption Standard) [BROKEN]
+  - DEA or DES in exam
+  - **64-bit block cipher, 56 bit key, 16 rounds of encryption, uses Fistel.**
+  - 5 different modes:
+    - **Block**
+    - **Stream**
+    - **Initialization Vector**
+    - **ECB** (Electronic Code Book):
+      - simple, weakest. no IV or chaining. (2 separate encryptions with same plaintext produces identical ciphertext)
+    - **CBC** (Cipher Block Chaining):
+      - uses IV and every subsequent block uses XOR from first block.
+      - the weakness is an encryption error which will propagate through all blocks after the error since they build on each other, breaking integrity.
+      
+
 
 # Cryptographic attacks
 
