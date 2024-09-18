@@ -512,19 +512,37 @@ SIGABA
 ![image](https://github.com/user-attachments/assets/20b56da6-2d7d-484b-84c2-5ff8659ef986)
 
 ### Symmetric Encryption
-- DES (Data Encryption Standard) [BROKEN]
+- **DES (Data Encryption Standard) [BROKEN]**
   - DEA or DES in exam
   - **64-bit block cipher, 56 bit key, 16 rounds of encryption, uses Fistel.**
-  - 5 different modes:
-    - **Block**
-    - **Stream**
-    - **Initialization Vector**
+  - 5 different modes it can encrypt data with - Block, Stream, Initialization Vector and if encryption errors propagate to the next block:
     - **ECB** (Electronic Code Book):
       - simple, weakest. no IV or chaining. (2 separate encryptions with same plaintext produces identical ciphertext)
     - **CBC** (Cipher Block Chaining):
+      - **block cipher**
       - uses IV and every subsequent block uses XOR from first block.
       - the weakness is an encryption error which will propagate through all blocks after the error since they build on each other, breaking integrity.
+    - **CFB** (Cipher Feedback):
+      - **stream cipher**
+      - It uses feedback, IV and it has the same error propagation.
+    - **OFB** (Output Feedback):
+      - Instead of the previous ciphertext for XOR, it uses the subkey before it is XOR'd to the plaintex - ensures that error propagations do NOT occur.
+    - **CTR** (Counter):
+      - First block XOR'd with 1, second block with 2, third block with 3; since the Feedback is predictable it can be done in parallel.
       
+- **3 DES (Triple DES)**
+  - Developed to extend DES system life to prepare for AES.
+  - 3 rounds of DES
+    - K1 (keymode1): 3 different keys with 112-bit key strength
+    - K2 (keymode2): 2 different keys with 80-bits and 1/3 same key
+    - K3 (keymode3): Same key 3 times, just as insecure as DES
+  - considered secure until 2030 and still commonly used (K1).
+
+- IDEA (International Data Encryption Algorithm):
+  - designed to replace DES.
+  - **128-bit key, 64-bit block size**
+  - considered sage, but not widely used since it's **patented** and **slower than AES**.
+
 
 
 # Cryptographic attacks
