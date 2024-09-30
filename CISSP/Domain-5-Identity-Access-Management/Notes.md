@@ -3,16 +3,15 @@
 >
 > How we identify our assets, the platforms we use for them, how we provide authorized access and prevent unauthorized access to the assets and the asset/identity lifecycle.
 
-> [!NOTE]
-> **CONTENT**:
-> 
-> [Access Control](#access-control)  
-> [Authorization](#authorization)
-> [Accountability](#accountability)
-> [Access Control Systems](#access-control-systems)
-> [Service Account Management](#service-account-management)
-> [Identity and Access provisioning](#identity-and-access-provisioning)
-> [Authentication Protocols](#authentication-protocols)
+
+**CONTENT**:
+[Access Control](#access-control)  
+[Authorization](#authorization)
+[Accountability](#accountability)
+[Access Control Systems](#access-control-systems)
+[Service Account Management](#service-account-management)
+[Identity and Access provisioning](#identity-and-access-provisioning)
+[Authentication Protocols](#authentication-protocols)
 
 # Access Control
 This is determined by our policies, procedures and standards.
@@ -56,7 +55,29 @@ Also referred to auditing and non-repudiation.
 Centralized logs backed up.
 
 # Access Control Systems
+In a perfect world, access control systems should be physically and logically segmented from the rest of our IP networks.
 
+### Centralized Access Control Systems
+- All systems/locations have the same security posture.
+- Easier to manage,
+- Only a few people have access and the privilege to make changes.
+- Provides separation of duties.
+- SSO can be used for user access to multiple systems.
+
+### De-Centralized Access Control Systems
+- Traffic overhead and response time, takes longer to authenticate.
+- Connectivity to the head office must be stable enough.
+
+### Hybrid
+- centrally-controlled; ACLs for that location are pushed to a local server on a daily basis / local admins have no access to that.
+- local site still needs to follow organization's secuirty policies throughout.
+
+### Just-In-Time
+
+
+### OpenID Connect (OIDC) / Open Authorization
+
+### Risk-Based Access Control
 
 # Service Account Management
 # Identity and Access provisioning
