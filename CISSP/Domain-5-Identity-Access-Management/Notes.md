@@ -32,6 +32,7 @@ NEVER USE group logins/accounts as they have no accountability.
 - **Nonce**: number once - random pseudo-number issued during authentication protocols to ensure old communications/sessions cannot be used in replay attacks!
 - **Clipping levels**: to prevent administrative overhead - allows authorized users to get extra tries during password failures. Clipping levels are thresholds of acceptable user errors and suspicious activities. If this threshold is exceeded, it must be logged and the administrator must decide if any malicious activity is taking place or if the user needs some training.
 
+HOTP is an example of 'Something you HAVE'.
 ![image](https://github.com/user-attachments/assets/8c3825e2-4ed5-4079-96d5-d8b0407c2a19)
 
 ![image](https://github.com/user-attachments/assets/376251b0-17c1-4500-84d2-fee0d4a2b61a)
