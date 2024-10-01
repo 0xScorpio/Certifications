@@ -5,13 +5,13 @@
 
 
 **CONTENT**:
-[Access Control](#access-control)  
-[Authorization](#authorization)
-[Accountability](#accountability)
-[Access Control Systems](#access-control-systems)
-[Service Account Management](#service-account-management)
-[Identity and Access provisioning](#identity-and-access-provisioning)
-[Authentication Protocols](#authentication-protocols)
+- [Access Control](#access-control)  
+- [Authorization](#authorization)
+- [Accountability](#accountability)
+- [Access Control Systems](#access-control-systems)
+- [Service Account Management](#service-account-management)
+- [Identity and Access provisioning](#identity-and-access-provisioning)
+- [Authentication Protocols](#authentication-protocols)
 
 # Access Control
 This is determined by our policies, procedures and standards.
