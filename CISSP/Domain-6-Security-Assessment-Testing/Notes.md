@@ -119,6 +119,11 @@ Best practices:
 
 ![image](https://github.com/user-attachments/assets/96e2cff4-913d-4751-b2d1-6c7bca8c1c80)
 
+- **Misuse Case Testing**:
+  - executing malicious attacks against a system that normal users wouldn't do
+- **Test Coverage Analysis**:
+  - identifies how much of the code was tested in relation to the entire application.
+  - in massive environments, we spot check only the critical areas.
  
   
 
