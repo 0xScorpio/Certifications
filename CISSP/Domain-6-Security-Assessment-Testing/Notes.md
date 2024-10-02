@@ -93,3 +93,32 @@ Best practices:
 - SAST: passively testing code when it is not running.
 - DAST: actively testing code when it is running.
 
+![image](https://github.com/user-attachments/assets/9f5a187b-923f-471f-8c53-f85b42c9b62a)
+
+### Software Testing Levels
+- **Unit Testing**:
+  - tests that verify the functionality of a specific section of the code.
+  - in an object-oriented environment, this is usually at a class level / minimal unit tests include constructors and destructors.
+- **Integration Testing**:
+  - tests that verify the interfaces between components against a software design.
+- **Component Interface Testing**:
+  - tests a completely integrated system to verify that the system meets its requirements
+- **Operational Acceptance**:
+  - used to conduct operational readiness of a product (pre-release)
+- **Installation Testing**:
+  - assures the system is installed correctly and working at actual customer's hardware.
+- **Regression Testing**:
+  - Finding defects after a major code change has occurred.
+  - Looks for software regressions, as degraded or lost features, including old bugs that may have come back.
+- **Fuzz Testing**:
+  - testing with different inpputs to cause unauthorized access or unpredictable states of an application.
+  - if the program crashes/hangs, fuzz test has failed.
+  - mutating fuzzing; tester analyzes real info and modifies it iteratively.
+- **All-Pairs Testing (Pairwise Testing)**:
+  - black-box technique in which test cases are designed to execute all possible discrete combinations of each pair of input parameters.
+
+![image](https://github.com/user-attachments/assets/96e2cff4-913d-4751-b2d1-6c7bca8c1c80)
+
+ 
+  
+
