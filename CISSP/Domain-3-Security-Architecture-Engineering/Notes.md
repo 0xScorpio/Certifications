@@ -546,6 +546,7 @@ SIGABA
 - AES (Advanced Encryption Standard):
 There a better and faster symmetric encryptions than AES, however, AES is open-source compared to other patented, paid options.
   - Rijndael
+  - 128 bits
   - considered secure
   - uses both transposition and substitution
   - AES operates on a 4x4 column-major order of matrix of bytes:
