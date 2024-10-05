@@ -541,7 +541,62 @@ SIGABA
 - IDEA (International Data Encryption Algorithm):
   - designed to replace DES.
   - **128-bit key, 64-bit block size**
-  - considered sage, but not widely used since it's **patented** and **slower than AES**.
+  - considered safe, but not widely used since it's **patented** and **slower than AES**.
+
+- AES (Advanced Encryption Standard):
+There a better and faster symmetric encryptions than AES, however, AES is open-source compared to other patented, paid options.
+  - Rijndael
+  - considered secure
+  - uses both transposition and substitution
+  - AES operates on a 4x4 column-major order of matrix of bytes:
+
+During the **initial round**, there is an AddRoundKey function, where each byte is combined with a block of the round key using bitwise XOR:
+
+![image](https://github.com/user-attachments/assets/eb903471-c812-425d-b523-a011e48c29e8)
+
+The next **rounds**, there are 3 different functions that occur:
+- **SubBytes**: a non-linear substitution step where each byte is replaced with another according to a lookup table.
+- **ShiftRows**: a transposition step where the last three rows of the state are shifted a certain number of steps.
+- **MixColumns**: a mixing operation which operates on the columns, combining the 4 bytes in each column.
+![image](https://github.com/user-attachments/assets/d3a27c43-13ce-48a8-80bb-19c988f0b2b1)
+![image](https://github.com/user-attachments/assets/558e6e0f-9753-437a-b352-23f0250d8b72)
+
+In the **final round**, the follow functions are left:
+- SubBytes
+- ShiftRows
+- AddRoundKey
+
+The key size specifies the number of repetitions of transformation rounds that occur to convert the plaintext to ciphertext.
+- 10 cycles for 128-bit keys
+- 12 cycles for 192-bit keys
+- 14 cycles for 256-bit keys
+
+> [!IMPORTANT]
+> For the exam, know it's symmetric, open-source, secure, and how the initial, next and final rounds work, what each round does and how many rounds/cycles go through per key size.
+
+- **Blowfish**
+  - uses Feistel
+  - Block cipher, 64-bit blocks, 32 to 448-bit key lengths
+  - NOT secure
+ 
+- **Twofish**
+  - uses Feistel
+  - Block cipher, 128-bit blocks, 128/192/256-bit key lengths
+  - secure
+ 
+- **Feistel cipher (network)**
+  - Cipher splits a plaintext block into 2 halfs (L and R).
+  - Process goes through several rounds, the R half does not change.
+  - The Right half (Rn) is XOR with a subkey (Kn) for each round (F).
+  - The XOR value (F) is XOR with the Left half (Ln).
+  - The recipient reverse the subkey order and XORs to get the plaintext.
+
+![image](https://github.com/user-attachments/assets/3c64bd79-5550-4503-b4f3-0fb2e35b8e56)
+
+**Feistel (modified) Algorithms**
+Blowfish, Camellia, CAST-128, DES, FEAL, ICE, KASUMI, LOKI97, Lucifer, MARS, MAGENTA, MISTY1, RC5, TEA, Triple DES, Twofish, XTEA ...
+**Generalized Feistel Algorithms**
+CAST-256, MacGuffin, RC2, RC6, Skipjack
 
 
 
