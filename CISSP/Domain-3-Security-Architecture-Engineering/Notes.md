@@ -559,6 +559,7 @@ The next **rounds**, there are 3 different functions that occur:
 - **SubBytes**: a non-linear substitution step where each byte is replaced with another according to a lookup table.
 - **ShiftRows**: a transposition step where the last three rows of the state are shifted a certain number of steps.
 - **MixColumns**: a mixing operation which operates on the columns, combining the 4 bytes in each column.
+
 ![image](https://github.com/user-attachments/assets/d3a27c43-13ce-48a8-80bb-19c988f0b2b1)
 ![image](https://github.com/user-attachments/assets/558e6e0f-9753-437a-b352-23f0250d8b72)
 
@@ -599,6 +600,50 @@ Blowfish, Camellia, CAST-128, DES, FEAL, ICE, KASUMI, LOKI97, Lucifer, MARS, MAG
 **Generalized Feistel Algorithms**
 CAST-256, MacGuffin, RC2, RC6, Skipjack
 
+- **RC4**:
+  - Used by WEP/WPA/SSL/TLS
+  - Pseudorandom keystream
+  - NOT secure
+  - Stream cipher with 40 to 2048-bit key length
+
+- **RC5**:
+  - Block cipher, 32/64/128-bit blocks with key lengths 0-2040 bits.
+  - Secure IF high enough blocks/key
+
+- **RC6**:
+  - AES3 finalist
+  - Based on RC5, but edited to meet AES requirements and use Feistel.
+  - Block cipher, 128-bit block with 128/192/256-bit key length.
+  - Secure
+
+### Asymmetric Encryption
+In the 1970s, multiple asymmetric keys were developed incliding Diffie-Hellman (1976) and RSA (1977).
+- 2 keys, public and private key pair
+- use of one way functions:
+
+**Prime Number Factorization**:
+  - Easy to multiply 2 high numbers, hard to discern the 2 numbers used for the result.
+  
+**Discrete Logarithms**:
+  - Easy to log 4584932532 to the power of 4537829458, hard to discern X to the power of Y with just the result.
+
+- **RSA (Rivest-Shamir-Adleman)**
+  - Used to exchange symmetric keys, slow and patent-protected (1977-1997, 20 years)
+  - 1024-4096-bit key
+  - considered SECURE
+  - RSA-704 broken due to a side-channel attack
+
+- **Diffie-Hellman (DH)**
+
+- **Elliptic Curve Cryptography (ECC)**
+  - Uses discrete logarithms applied to elliptical curves - much stronger
+  - Often found in low-power devices, since they can use shorter key lengths and be as secure
+  - Patented, therefore costs money to use.
+  - 256-bit ECC key is as strong as 3072-bit RSA key.
+  
+### Hashing
+
+### Quantum Cryptography and Key Distribution
 
 
 # Cryptographic attacks
