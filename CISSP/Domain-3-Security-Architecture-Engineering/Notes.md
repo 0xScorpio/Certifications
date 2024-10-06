@@ -701,14 +701,80 @@ PRIMARY function of **salting** is to defend against dictionary attacks or a pre
 
 Quantum Key Distribution (QKD) relies on the Heisenberg uncertainty principle and the no-cloning theorem to prevent eavesdropping. Real-time detection of tampering/eavesdropping is possible with QKD. Challenges include distance limitations and the fragility of quantum states.
 
-**Communication Process**
+**Heisenberg uncertainty principle:** certain pairs of physical properties such as position and momentum, can't be simultaneously measured with perfect accuracy.
+
+In other words, a hacker couldn't measure the quantum state of a proton without disturbing the proton itself. Therefore, by observing the proton, we can tell if it has been tampered with.
+
+**No Cloning Theorem**: it is impossible to create an identical copy of an unknown quantum state.
+
+This defends from the hacker creating a duplicate of the proton in order to measure its quantum state.
+
+Researchers are currently using **Quantum Repeaters** and satellite0based QKD to overcome distance limitations in quantum communication.
 
 # Cryptographic attacks
 
+- **Steal the Key**: literally
+- **Brute Force**: literally
+- **Key stretching**: pause 1-2 seconds during every password verification
+- **Digraph attack** similar to frequency analysis, but looks at common pairs (TH, HE, IN, ER)
+- **MiTM**
+- **Session Hijacking**: takes over web user's session ID
+- **Social Engineering**
+- **Adaptive Chosen Plaintext**: attacker adapts the following rounds based on previous rounds.
+- **Meet-In-The-Middle**: known plaintext - attacker has to know some parts of the plaintext and ciphertexts to break multiple ciphers, which have 2 or more secret keys for multiple encryptions using the same algorithm. (Think 3DES)
+- **Known Key**: attacker knows something about the key (password is 8 chars / first char is uppercase, etc.)
+- **Differential Cryptanalysis**: find the difference between related plaintexts.
+- **Linear Cryptanalysis**: known plaintext attack - attacker has a lot of plain/cipher text pairs.
+- **Differential Linear Cryptanalysis**
+- **Side-Channel Attacks**: use of physical data to break a crypto system. (CPU cycles, power consumption, sound, etc.)
+- **Implementation Attacks**: a vulnerability is left from the implementation of the application/service.
+- **Key Clustering**: when 2 different symmetric keys used on the same plaintext produce the same ciphertext, both can decrypt ciphertext from the other key.
+- **Pass The Hash**: attackers passes on the hashed password to a system
+- **Kerberos Exploitation**:
+  - **Overpass the Hash / Pass the Key**: used when NTLM is disabled on a network, since systems will generate an NTLM hash and store it in memory.
+  - **Pass The Ticket**: attacker attempts to collect tickets held in lsass.exe process. Attacker then injects the ticket to impersonate the user.
+  - **Silver Ticket**: attacker uses NTLM hash of a service account to make a TGS ticket.
+  - **Golden Ticket**: attacker gains access to hash of the Kerberos service account and can create any tickets they want in AD.
+  - **Kerberos Brute-Force**: kerbrute.py or Rubeus.exe to report if username is valid or not.
+  - **ASREPRoast**: if Kerberos pre-authentication is disabled (default is enabled)
+  - **Kerberoasting**: attacker collects encrypted TGS tickets (service accounts). When enough collected, can be decrypted offline. Again, tries to find service accounts with Kerberos pre-authentication disabled.
+- **Fault Injection**: attacker tries to compromise the integrity of cryptographic devices by external faults (active side-channel, stress tests, temperature, light, etc.)
+
 # Digital Signatures
+Mainly for integrity and non-repudation.
+
+- **Key Escrow**: Keys are kept by a 3rd party organization.
+- **Certificate Authority**
+- **Organizational Registration Authority**: within an org, authenticates the certificate holder prior to certificate issuance.
+- OCSP (Online Certification Status Protocol): client/server hybrid, better balance, faster, keeps list of revoked certificates.
+- **Clipper chip**: NSA developed an encryption device that secured voice and data messages with a built-in backdoor.
+
 # MAC, HMAC, SSL and TLS
+
+![image](https://github.com/user-attachments/assets/afd8be5f-bd83-4a7c-b49a-904fda51446a)
+
+![image](https://github.com/user-attachments/assets/6c4fc586-ab1c-4116-8edf-9bfbe321edcf)
+
 # IPSec and PGP
+
+![image](https://github.com/user-attachments/assets/2fbebcfe-b833-45d9-b8b3-0208251eaf2b)
+
+![image](https://github.com/user-attachments/assets/b5d12f54-d69c-483d-923b-92bb79518bb2)
+
+![image](https://github.com/user-attachments/assets/d2e5d9d5-0420-4780-b23a-709fe020f104)
+
+![image](https://github.com/user-attachments/assets/70209130-9481-404a-b727-250fe450293f)
+
+![image](https://github.com/user-attachments/assets/8f226636-455d-4337-b980-eb261d02db93)
+
 # Physical Security
+
+- Preventative Control: prevents action (assume attacker has chosen to act)
+- Detective Control: detect during, before and after (CCTV, alarms, etc.)
+- Deterrent Control: deters action (assume attacker chosen not to act due to deterrent)
+- Compensating Control: for controls that are too costly to implement)
+- Administrative Control: (policies, compliance, procedures)
+
 # Site selection
 # Media Storage
 # Asset tracking and hardware hardening
