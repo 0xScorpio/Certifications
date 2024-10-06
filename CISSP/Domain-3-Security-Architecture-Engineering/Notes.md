@@ -640,7 +640,19 @@ In the 1970s, multiple asymmetric keys were developed incliding Diffie-Hellman (
   - Often found in low-power devices, since they can use shorter key lengths and be as secure
   - Patented, therefore costs money to use.
   - 256-bit ECC key is as strong as 3072-bit RSA key.
-  
+
+- **ElGamal**
+  - based on Diffie-Hellman key exchange
+  - used in free GNU Privacy Guard software, recent versions of PGP and other cryptosystems.
+
+- **DSA (Digital Signature Algorithm)**
+  - uses a different algorithm for signing and encryption than RSA, yet provides the same security.
+  - DSA is a variant of ElGamal signature scheme.
+
+- **Knapsack (Merkle-Hellman knapsack cryptosystem)**
+  - The public key is used only for ENCRYPTION and the private key for DECRYPTION.
+  - NOT secure
+
 ### Hashing
 
 ### Quantum Cryptography and Key Distribution
