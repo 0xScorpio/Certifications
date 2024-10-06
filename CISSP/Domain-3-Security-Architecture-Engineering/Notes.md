@@ -654,9 +654,54 @@ In the 1970s, multiple asymmetric keys were developed incliding Diffie-Hellman (
   - NOT secure
 
 ### Hashing
+Only used for INTEGRITY.
+
+- **MD5**
+  - 128-bit fixed length hash
+  - widely used despite flaw found regarding collisions
+
+- **MD6**
+  - Was supposed to replace MD5 but SHA2/3 were better
+  - Withdrew due to flaws
+ 
+- **SHA1**
+  - 160-bit hash value
+  - Weak collision avoidance but still commonly used
+
+- **SHA2**
+  - considered collision resistant
+  - somewhat used, relatively new
+
+- **SHA3**
+  - Finalized in August 2015
+
+- **HAVAL (Hash of Variable Length)**
+  - Not widely used
+  - MD length is varied between 128/160/192/224/256 bits
+
+- **RIPEMD**
+  - Developed outside of defense to ensure no government backdoors
+  - 128/256/320 bit hashes
+  - NOT secure
+
+- **RIPEMD160**
+  - fixed flaws of RIPEMD
+  - 160-bit hashes
+  - not widely used
+  - Considered SECURE
+
+PRIMARY function of **salting** is to defend against dictionary attacks or a pre-compiled rainbow table attack.
+
+**Nonce**: arbitrary number that may only be used once.
 
 ### Quantum Cryptography and Key Distribution
 
+- **Quantum entanglement**:
+  - forms the foundation of quantum cryptography, ensuring communication channels are immune to hacking.
+
+Quantum Key Distribution (QKD) relies on the Heisenberg uncertainty principle and the no-cloning theorem to prevent eavesdropping. Real-time detection of tampering/eavesdropping is possible with QKD. Challenges include distance limitations and the fragility of quantum states.
+
+**Communication Process**
 
 # Cryptographic attacks
 
