@@ -54,8 +54,22 @@ Ensure that evidence is acquired in a legal manner.
 
 Despite the 4th Amendment, if anything is subpoenaed, search warranted, turned over voluntarily and/or in exigent circumstances (immediate danger of being destroyed), law enforcement is given the rgith to bypass it.
 
+![image](https://github.com/user-attachments/assets/bebd53ec-6741-463c-8928-1d30499d8666)
+
+
 ### Disk Forensics
 There are 4 types of disk-based forensic data:
-- Allocated Space: The portions of the disk that are marked as actively containing data.
-- Unallocated Space: When a file is deleted, the parts of the disk that held the deleted file are marked as unallocated and made available for use. (This is also why deleting a file does nothing, the data is still there until overwritten.
-- 
+
+![image](https://github.com/user-attachments/assets/48125b46-34bd-43f4-8f7b-636dc6beb531)
+
+- **Allocated Space**: The portions of the disk that are marked as actively containing data.
+- **Unallocated Space**: When a file is deleted, the parts of the disk that held the deleted file are marked as unallocated and made available for use. (This is also why deleting a file does nothing, the data is still there until overwritten.)
+- **Slack Space**: If a file does not require the use of an entire cluster, then some extra space will exist within.
+- **Bad Blocks/Clusters/Sectors**: hard disks may end up with sectors that can't be read due to a physical defect - these bad sectors will be ignored by the OS.
+
+In each of these spaces, attackers can hide their data/malware by marking them as slack, bad blocks or unallocated spaces.
+
+### Network Forensics
+Network forensics tends to be a pro-active investigation since network traffic is transmitted and then lost.
+1. Monitoring a network for anomalous traffic and identifying intrusions (IDS/IPS).
+2. Relates to law enforcement - analysis of captured network traffic can include tasks such as reassembling transferred files, searching for keywords and parsing human communication such as emails or chat sessions.
