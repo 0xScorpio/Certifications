@@ -10,6 +10,7 @@
 - Striping: Spreading data writes across multiple disks to achieve performance gains, used by some levels of RAID.
 - Real Evidence: Tangible and Physical objects a.k.a Hard Drives, USBs - NOT the data on them!
 - Chain of custody: Who handled it / When / What did they do with it / Where did they handle it?
+- Resume Producing Event (RPE): a f@#$kup that could cause someone to get fired??
 
 ## Administrative Personnel Controls
 - Least Privilege
@@ -73,3 +74,40 @@ In each of these spaces, attackers can hide their data/malware by marking them a
 Network forensics tends to be a pro-active investigation since network traffic is transmitted and then lost.
 1. Monitoring a network for anomalous traffic and identifying intrusions (IDS/IPS).
 2. Relates to law enforcement - analysis of captured network traffic can include tasks such as reassembling transferred files, searching for keywords and parsing human communication such as emails or chat sessions.
+
+![image](https://github.com/user-attachments/assets/88343142-94ee-41ac-8b1e-ad19cbfab1d3)
+
+![image](https://github.com/user-attachments/assets/f6776b41-d739-4681-ae93-5935a8e8c53d)
+
+![image](https://github.com/user-attachments/assets/3af9869d-ffbb-4053-974c-6faf68786809)
+
+![image](https://github.com/user-attachments/assets/bfb1cf33-6303-404f-821b-d1523655990e)
+
+### Incident Management
+Incidents and events can generally be categorized in 3 classes:
+- Natural: Hurricanes, floods, earthquakes, etc.
+- Human: done either intentionally or unintentionally by humans
+- Environmental: the environment we work in a.k.a power grid, internet connections, hardware failures, software flaws
+
+TERMS:
+- **Event**: an observable change in state, neither negative nor positive.
+- **Alert**: warnings for specific events.
+- **Incident**: multiple adverse events happening in our systems/network, often caused by people.
+- **Problem**: Incident with an unknown cause - we'd still follow similar steps to incident response.
+- **Inconvenience**: Non-disruptive failures, hard disk failures, 1 node down in a cluster.
+- **Emergency/Crisis**: Urgent, event with potential for loss of life or property.
+- **Disaster**: entire facility is unusable for 24 hours or longer.
+- **Catastrophe**: Facility entirely destroyed.
+
+- IR 8-step lifecycle
+
+![image](https://github.com/user-attachments/assets/44a59ba1-1fa6-4220-862f-5cc22c52a6ff)
+
+  - **Preparation**: outlines all the steps we do for incidents. Policies, procedures, training, tools.
+  - **Detection**: Events analyzed to determine if it's a security incident. IDS/IPS
+  - **Response**: Tools and training come into play. Contain an event, create bit-level copies of a system, isolation.
+  - **Mitigation**: Understand the cause of the incident. RCA to understand if we need patches and vulnerability management.
+  - **Reporting**: document throughout the process from detection phase (technical/non-technical)
+  - **Recovery**
+  - **Remediation**
+  - **Lessons Learned**
