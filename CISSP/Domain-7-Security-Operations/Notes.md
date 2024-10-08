@@ -140,11 +140,31 @@ B. Heuristic/Behavourial Based Matching
 - SOAR: uses AI to allow us to respond to incidents automatically. Can at times react to an event and usually manages logs to reduce load.
 
 ![image](https://github.com/user-attachments/assets/212cd971-92c5-4d46-becd-73b437d89553)
+
 *Spelling mistake: SOAR is generally more expensive than SIEM.
 
 ### Application positive-listing
+Basically whitelisting, from most secure to least:
+- hash
+- path
+- name
+
+Good security policies should also lock down USB ports, CD drives, and anywhere else where you can load malicious code unto systems from external devices. Use Group Policy for all this.
+
 ### Honeypots
+Systems that look like our real system - sole purpose is to attract attackers. This is to learn our vulnerabilities, alert us during 'breaches' and learn to mitigate such attacks. Always talk to LEGAL before deploying honeypots since there's a thin line with ENTRAPMENT (making someone commit a crime) and ENTICEMENT (attacker already decides on committing a crime, and you made it more appealing) and gain senior management's APPROVAL. Make sure they are segmented and isolated between sensitive servers.
+
+- **Low-interaction honeypot** simply captures connection attempts and alerts an intrusion has been attempted.
+- **High-interaction honeypot**: allows attackers to compromise and gain access to the system.
+
+**Production honeypots are placed inside the production network with other production servers by an organization to improve their overall state of security. Normally, production honeypots are low-interaction honeypots, which are easier to deploy.**
+
+> [!TIP]
+> The MOST effective way to use honeypots/honeynets among the provided options is 'As a tool to gather information on attackers'. Honeypots and honeynets are primarily used to detect, deflect, or study attempts at unauthorized use of information systems. They serve as decoys, mimicking real systems to deceive attackers, allowing security professionals to observe and analyze the attackers' behaviors, and gather intelligence about their techniques. While they do serve as decoys, their primary value is in the information they provide rather than actively blocking or mitigating attacks.
+
 ### Configuration Management
+
+
 ### Patch Management
 ### Change Management
 ### Zero-Days
