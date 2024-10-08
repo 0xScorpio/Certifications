@@ -198,9 +198,16 @@ Differences with Zero-Day vulnerability, exploit and attack.
 
 ![image](https://github.com/user-attachments/assets/cbc05969-fb04-4921-ab26-aa9ee670e0ce)
 
-
-
 ### Backups
+To ensure internal SLAs, we need to provide as high availability as possible. For backups, we use:
+
+- **Full**: backup everything.
+- **Incremental**: backup what was changed since the last backup.
+- **Differential**: backup everything that was changed since the last FULL backup.
+- **Copy**: same as FULL, but we do not clear the archive bit or the flag.
+
+In our backup solutions, our backup policies should state what to backup, what to exclude, how long to keep the data of various backup types. 
+
 ### RAID
 ### Redundancy
 ### BCP and DRP
