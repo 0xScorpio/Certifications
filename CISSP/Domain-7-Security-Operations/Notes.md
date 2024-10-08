@@ -164,10 +164,42 @@ Systems that look like our real system - sole purpose is to attract attackers. T
 
 ### Configuration Management
 
+When receiving or building new systems, they often come in a default insecure state, thus we have to harden them before introducing them into our environment. We develop a long list of ports to close, services to disable, accounts to delete and any missing patches.
 
 ### Patch Management
+
+For multiple systems, tools like SCCM or WSUS help not only push patches but also any software we want to distribute to our orgnaization. Best to do these pushes AFTER HOURS to not impact availability. We tend to avoid midnights since a lot of backups and EOD jobs run then, therefore a decent timeframe is approx. 2:00am-4:00am.
+
 ### Change Management
+The formalized process on how we handle changes to our environments. Done right, we should:
+- have full documentation and understanding of all systems in place
+- communicate changes to all appropriate parties
+- Change Review board should be comprised of both IT and other operational units
+- when a change is proposed to the change board, thorough research needs to be done to understand the full impact
+- person/group submitting the change should clearly explain the reasons for the change (pros/cons)
+- any final change requires senior leadership approval
+
+For example:
+
+![image](https://github.com/user-attachments/assets/d28f9d60-2e0a-4730-8783-bc09b2629205)
+
+Change Management Process:
+- PLAN: request, analyze, approve
+- DO: plan implementation, communicate, implement and test
+- CHECK: success->communicate or failure(rollback)->communicate
+- ACT: acceptance, lessons learned
+
+![image](https://github.com/user-attachments/assets/efa84023-89b5-455c-b31e-7739cdb764c9)
+
 ### Zero-Days
+Differences with Zero-Day vulnerability, exploit and attack.
+
+**Stuxnet Case**
+
+![image](https://github.com/user-attachments/assets/cbc05969-fb04-4921-ab26-aa9ee670e0ce)
+
+
+
 ### Backups
 ### RAID
 ### Redundancy
