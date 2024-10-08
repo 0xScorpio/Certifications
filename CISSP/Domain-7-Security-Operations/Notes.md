@@ -108,6 +108,58 @@ TERMS:
   - **Response**: Tools and training come into play. Contain an event, create bit-level copies of a system, isolation.
   - **Mitigation**: Understand the cause of the incident. RCA to understand if we need patches and vulnerability management.
   - **Reporting**: document throughout the process from detection phase (technical/non-technical)
-  - **Recovery**
-  - **Remediation**
-  - **Lessons Learned**
+  - **Recovery**: carefully restore systems to operational status - reinsertion determined by the business unit responsible.
+  - **Remediation**: happens during mitigation phase, and continues after mitigation.
+  - **Lessons Learned**: produce a report to senior management, with findings, we can only make SUGGESTIONS. Outcomes feed to Preparation phase.
+
+### Preventive/Detective Controls (IDS/IPS)
+Two types:
+1. Network-Based: placed on network segment (a switch port in promiscuous mode)
+   - Can't look into encrypted traffic.
+   - Deployed on one switch, port and NIC must be promiscuous and port must be a span port. 
+2. Host-Based: on a client/workstation/server
+   - Since we're at Layer 7, we can see the unencrypted traffic.
+   - certain attacks can turn off HIDS/HIPS
+   - if we choose to do traffic analysis, it can impact host by slowing it down.
+
+Two approaches to identifying:
+A. Signature/Pattern Matching
+B. Heuristic/Behavourial Based Matching
+
+**How hackers mask/evade IDS/IPS detection**
+- Fragmentation: Sending fragmented packets can avoid the system from detecting the attack signature.
+- Avoiding Defaults: Attackers can send malware over an unexpected port.
+- Low-Bandwidth Coordinated Attacks: multiple agents are used to attack from various ports and hosts, difficult to deduce network scans.
+- Address spoofing/proxying: Attackers can use proxy servers to bounce an attack, making it harder to detect origin.
+- Pattern Change Evasion: Attacker changes the data used slightly.
+
+![image](https://github.com/user-attachments/assets/2ed723e7-c1eb-4d0c-b3f4-3d3b3af46172)
+
+### SIEM and SOAR systems
+- SIEM: gathers logs from all our systems and centralizes storage to allow near real-time automated identification, analysis and recovery of security events.
+- SOAR: uses AI to allow us to respond to incidents automatically. Can at times react to an event and usually manages logs to reduce load.
+
+![image](https://github.com/user-attachments/assets/212cd971-92c5-4d46-becd-73b437d89553)
+*Spelling mistake: SOAR is generally more expensive than SIEM.
+
+### Application positive-listing
+### Honeypots
+### Configuration Management
+### Patch Management
+### Change Management
+### Zero-Days
+### Backups
+### RAID
+### Redundancy
+### BCP and DRP
+### Warfare, terrorism, sabotage and ransomware
+### Personnel
+### DRP basics
+### Developing our BCP and DRP
+### Business Impact Analysis
+### Supply and infrastructure redundancy
+### Disaster Recovery sites
+### Other BCP subplans
+### Employee redundancy
+### Testing the Plans
+### After a disruption
