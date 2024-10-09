@@ -58,7 +58,7 @@ Despite the 4th Amendment, if anything is subpoenaed, search warranted, turned o
 ![image](https://github.com/user-attachments/assets/bebd53ec-6741-463c-8928-1d30499d8666)
 
 
-### Disk Forensics
+## Disk Forensics
 There are 4 types of disk-based forensic data:
 
 ![image](https://github.com/user-attachments/assets/48125b46-34bd-43f4-8f7b-636dc6beb531)
@@ -70,7 +70,7 @@ There are 4 types of disk-based forensic data:
 
 In each of these spaces, attackers can hide their data/malware by marking them as slack, bad blocks or unallocated spaces.
 
-### Network Forensics
+## Network Forensics
 Network forensics tends to be a pro-active investigation since network traffic is transmitted and then lost.
 1. Monitoring a network for anomalous traffic and identifying intrusions (IDS/IPS).
 2. Relates to law enforcement - analysis of captured network traffic can include tasks such as reassembling transferred files, searching for keywords and parsing human communication such as emails or chat sessions.
@@ -83,7 +83,7 @@ Network forensics tends to be a pro-active investigation since network traffic i
 
 ![image](https://github.com/user-attachments/assets/bfb1cf33-6303-404f-821b-d1523655990e)
 
-### Incident Management
+## Incident Management
 Incidents and events can generally be categorized in 3 classes:
 - Natural: Hurricanes, floods, earthquakes, etc.
 - Human: done either intentionally or unintentionally by humans
@@ -170,7 +170,7 @@ When receiving or building new systems, they often come in a default insecure st
 
 For multiple systems, tools like SCCM or WSUS help not only push patches but also any software we want to distribute to our orgnaization. Best to do these pushes AFTER HOURS to not impact availability. We tend to avoid midnights since a lot of backups and EOD jobs run then, therefore a decent timeframe is approx. 2:00am-4:00am.
 
-### Change Management
+## Change Management
 The formalized process on how we handle changes to our environments. Done right, we should:
 - have full documentation and understanding of all systems in place
 - communicate changes to all appropriate parties
@@ -198,7 +198,7 @@ Differences with Zero-Day vulnerability, exploit and attack.
 
 ![image](https://github.com/user-attachments/assets/cbc05969-fb04-4921-ab26-aa9ee670e0ce)
 
-### Backups
+## Backups
 To ensure internal SLAs, we need to provide as high availability as possible. For backups, we use:
 
 - **Full**: backup everything.
@@ -208,17 +208,17 @@ To ensure internal SLAs, we need to provide as high availability as possible. Fo
 
 In our backup solutions, our backup policies should state what to backup, what to exclude, how long to keep the data of various backup types. 
 
-### RAID
-### Redundancy
-### BCP and DRP
-### Warfare, terrorism, sabotage and ransomware
-### Personnel
-### DRP basics
-### Developing our BCP and DRP
-### Business Impact Analysis
-### Supply and infrastructure redundancy
-### Disaster Recovery sites
-### Other BCP subplans
-### Employee redundancy
-### Testing the Plans
-### After a disruption
+## RAID
+## Redundancy
+## BCP and DRP
+## Warfare, terrorism, sabotage and ransomware
+## Personnel
+## DRP basics
+## Developing our BCP and DRP
+## Business Impact Analysis
+## Supply and infrastructure redundancy
+## Disaster Recovery sites
+## Other BCP subplans
+## Employee redundancy
+## Testing the Plans
+## After a disruption
