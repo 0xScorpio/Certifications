@@ -230,8 +230,10 @@ RAID provides us redundancy NOT backup!
 
 ## Redundancy
 Stuff about clustering that you already know. (active/passive, nodes, etc.)
+
 - **Database Shadowing**: exact real-time copy of the database to another location (best practice: another geographical location)
-- **Electronic Vaulting**: 
+- **Electronic Vaulting**: remote backup service sent off-site electronically at certain intervals or during file changes.
+- **Remote Journaling**: Sends transaction logs to remote locations - not the files themselves. Transactions can be rebuilt from the logs if we lose the original files.
 
 ## BCP and DRP
 ## Warfare, terrorism, sabotage and ransomware
