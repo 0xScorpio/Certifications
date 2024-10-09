@@ -218,10 +218,21 @@ To ensure internal SLAs, we need to provide as high availability as possible. Fo
 In our backup solutions, our backup policies should state what to backup, what to exclude, how long to keep the data of various backup types. Based on our policies, requirements or regulations (whichever is longer).
 
 ## RAID
+RAID provides us redundancy NOT backup!
 
+- **Disk Mirroring**: writing the same data across multiple disks. (slower since RAID has to write data twice)
+- **Disk Striping**: writing the data simultaneously across multiple disks. (faster but does not provide redundancy)
 
+- **RAID 0**: STRIPING, no fault tolerance, faster write speed, requires at least 2 disks
+- **RAID 1**: MIRRORING, 2 disks identical data, write on both disks
+- **RAID 5**: STRIPING with PARITY, parity is spread across disks, requires at least 3 disks (only 1 disk can fail at a time)
+- **RAID 10**: First RAID 0, then split into 2 disks of RAID 1, requires at least 4 disks, 50% capacity usage due to PARITY.
 
 ## Redundancy
+Stuff about clustering that you already know. (active/passive, nodes, etc.)
+- **Database Shadowing**: exact real-time copy of the database to another location (best practice: another geographical location)
+- **Electronic Vaulting**: 
+
 ## BCP and DRP
 ## Warfare, terrorism, sabotage and ransomware
 ## Personnel
