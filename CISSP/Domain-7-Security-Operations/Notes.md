@@ -201,14 +201,26 @@ Differences with Zero-Day vulnerability, exploit and attack.
 ## Backups
 To ensure internal SLAs, we need to provide as high availability as possible. For backups, we use:
 
-- **Full**: backup everything.
-- **Incremental**: backup what was changed since the last backup.
+- **Full**: backup everything. (e.g. data kept for 1 year)
+  - Clears all archive bits
+  - requires 1 tape
+- **Incremental**: backup what was changed since the last backup. (e.g. data kept for 30 days)
+  - Clears all archive bits
+  - requires 4 tapes (restore a full backup alongside incremental backups)
+  - faster to backup, but longer to restore
 - **Differential**: backup everything that was changed since the last FULL backup.
+  - Does not clear archive bits
+  - requires 2 tapes (the full backup and differential backup)
+  - faster to restore, but longer to backup
 - **Copy**: same as FULL, but we do not clear the archive bit or the flag.
+  - often used before system updates or patches, in order to revert in case something goes wrong
 
-In our backup solutions, our backup policies should state what to backup, what to exclude, how long to keep the data of various backup types. 
+In our backup solutions, our backup policies should state what to backup, what to exclude, how long to keep the data of various backup types. Based on our policies, requirements or regulations (whichever is longer).
 
 ## RAID
+
+
+
 ## Redundancy
 ## BCP and DRP
 ## Warfare, terrorism, sabotage and ransomware
