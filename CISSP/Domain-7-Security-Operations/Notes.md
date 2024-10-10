@@ -305,8 +305,63 @@ In other words, we want MTD to always be greater than or equal to RTO + WRT.
 ![image](https://github.com/user-attachments/assets/76ca5dc5-1739-4b2f-a04a-a86fdd2ec99b)
 
 ## Supply and infrastructure redundancy
+
+![image](https://github.com/user-attachments/assets/33a9c8f1-64a3-4b6f-85f9-988b9e509da4)
+
+![image](https://github.com/user-attachments/assets/1d784d39-78d5-42fb-ae38-f7adf4465bdf)
+
+![image](https://github.com/user-attachments/assets/47307c83-5a4d-476a-9955-e4aeff709765)
+
 ## Disaster Recovery sites
+
+- **Redundant Site**: Completely identical to production, receives real-time copy of our data. Automatic failover. Most expensive.
+- **Hot Site**: Similar to redundant, but only houses CRITICAL applications and systems - mainly for lower spec systems. Near real-time copies and manual failovers.
+- **Warm Site**: Similar to Hot site without real-time data. Restored with backups. Manual failovers. Full switch and restore (4-24 hours).
+- **Cold Site**: Cheapest, no hardware or backups. Systems need to be acquired, configured and loaded. Can take weeks to 'restore'.
+
+- **Reciprocal Agreement Site**:
+  - Our organization has a contract with another organization where they will give us space in their data center in case of a disaster.
+  - Either by promised space or racks with hardware completely segmented off their networks.
+
+![image](https://github.com/user-attachments/assets/fd4c014b-4349-4bbe-b042-28dfc6d7d813)
+
 ## Other BCP subplans
+
+![image](https://github.com/user-attachments/assets/c42f1e96-ae16-4490-86dd-d998e387f8c7)
+
+![image](https://github.com/user-attachments/assets/43a40115-8184-4595-9407-680152980e81)
+
+![image](https://github.com/user-attachments/assets/eb0832b9-aba6-4c7f-bc26-87d39a5011e2)
+
+- **Call Trees**
+  - Each user in the tree calls a small number of people.
+  - Detailed communications plan should be printed out in case we have no network/system access.
+  - Starts from bottom up and then top down.
+  - E.g. Staff that discovers incident, calls manager, they contact someone senior, decision is made and top down approach.
+  - Automated call trees are often better tahn manual call tress.
+
 ## Employee redundancy
+
+- **Off Site Copies and Plans**
+- **EOC (Emergency Operations Center)**: central command and control facility responsible for emergency management, ensuring COOP.
+- **MOU/MOA (Memorandum of Understanding/Agreement)**: Staff signs a legal document acknowledging they are responsible for a certain activity.
+- **Executive Succession Planning**: Senior leadership often are the ones to declare a disaster.  If they're unavailable, there needs to be an alternative executive available to make these decisions.
+- **Employee Redundancy**: High degree of skilled employee redundancy, mitigated through training and job rotations.
+
 ## Testing the Plans
+
+![image](https://github.com/user-attachments/assets/3dc8d367-a8fa-43bb-b42f-fe335f12eeba)
+
+![image](https://github.com/user-attachments/assets/c7ea2b28-8e89-4a73-926e-db1bdae64c27)
+
+- Testing
+- Drills/Exercises/Simulations
+- Auditing
+
+Plans need to be continually updated as it is an iterative process. Ideally, at least every 12 months.
+We also want to update the plans during every major change.
+
 ## After a disruption
+
+![image](https://github.com/user-attachments/assets/2956722d-68c1-473e-978f-5aea4bb8d189)
+
