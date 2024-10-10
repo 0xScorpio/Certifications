@@ -60,7 +60,7 @@
 **SOFTWARE RELEASE**
 - 3 types of free software:
   - **Freeware**: free software, free of charge to use.
-  - **Shareware**: fully functional proprietary software initially free to use. Trials to test, after 30 days, pay to contunue use.
+  - **Shareware**: fully functional proprietary software initially free to use. Trials to test, after 30 days, pay to continue use.
   - **Crippleware**: Partially functioning proprietary software, key features disabled. Payment required to unlock full functionality.
  
  - **EULA (End-User License Agreements)**: Electronic form where the user agrees to software terms/conditions while installing software.
@@ -79,7 +79,13 @@ Open source software can be protected by a variety of licensing agreements:
   - software must be free and free to distribute modifications of software.
   - requires preservation of the copyright notice and disclaimer.
 
+![image](https://github.com/user-attachments/assets/e624b9be-4cfe-4a1f-9bb8-224fa89aebcd)
+
+
  # Software development methodologies
+
+
+ 
  # DevOps and DevSecOps
  # Scaled Agile Frameworks
  # Databases
