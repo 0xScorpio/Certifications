@@ -58,6 +58,7 @@
 - **Proprietary Software**: software protected by IP/patents. Can be both Open or Closed source. Any software not released to public is protected by copyright.
 
 **SOFTWARE RELEASE**
+
 - 3 types of free software:
   - **Freeware**: free software, free of charge to use.
   - **Shareware**: fully functional proprietary software initially free to use. Trials to test, after 30 days, pay to continue use.
@@ -66,6 +67,7 @@
  - **EULA (End-User License Agreements)**: Electronic form where the user agrees to software terms/conditions while installing software.
 
 **SOFTWARE LICENSES**
+
 Open source software can be protected by a variety of licensing agreements:
 - **GNU (General Public License or GPL)**
   - guarantees end users the freedom to run, share and modify the software.
