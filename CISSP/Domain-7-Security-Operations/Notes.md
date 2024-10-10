@@ -236,11 +236,74 @@ Stuff about clustering that you already know. (active/passive, nodes, etc.)
 - **Remote Journaling**: Sends transaction logs to remote locations - not the files themselves. Transactions can be rebuilt from the logs if we lose the original files.
 
 ## BCP and DRP
-## Warfare, terrorism, sabotage and ransomware
+
+- **Business Continuity Plan**
+  - long-term strategic business plans, policies and procedures for continued operations after a disruptive event.
+  - lists a range of disaster scenarios and the steps an organization must take in each scenario
+  - Contains:
+    - COOP (Continuity of Operations Plan)
+    - Crisis Communications Plan
+    - Critical Infrastructure Protection Plan
+    - Cyber Incident Response Plan
+    - DRP (Disaster Recovery Plan)
+    - ISCP (Information System Contingency Plan)
+    - Occupant Emergency Plan
+
+![image](https://github.com/user-attachments/assets/4178c7c7-ac42-4ac2-814d-f7de754ab688)
+
+- **Disaster Recovery Plan**
+  - short-term version of BCP (subset of BCP)
+  - focuses on critical IT and business functions and how we back them up
+  - much more system specific, where BCP is more non-system specific
+
+Three categories of disasters:
+- **Natural**
+- **Human**: errors and omissions (accidental)
+- **Environmental**: power outages, hardware failures, provider issues, etc.
+
 ## Personnel
+
+![image](https://github.com/user-attachments/assets/31e7792a-e351-4164-9887-ce9bc445bef7)
+
 ## DRP basics
+1. What is the **objective/purpose**?
+2. **Who** (people/teams) will be responsible during disruptions?
+3. What will these (people/teams) **do** during disruptions?
+
+![image](https://github.com/user-attachments/assets/ecd80cff-cd06-4981-bcba-227c541ac8e2)
+
 ## Developing our BCP and DRP
+
+![image](https://github.com/user-attachments/assets/6f46a8cb-dfc2-4f10-80c9-73bc20aa5371)
+
+Senior management needs to be involved and committed during the BCP/DRP process.
+- Need to ba part of at least the initiation and final approval of the plans
+- They must show due-care and due-diligence since they are ultimately liable
+- Top-Down IT security approach (exam assumes that already)
+- Senior management or Legal talks to the press
+
+![image](https://github.com/user-attachments/assets/bb25577e-c082-494f-b907-9213b23f5c3f)
+
 ## Business Impact Analysis
+Identifies critical and non-critical organization systems, functions and activities.
+
+- A function may be considered critical based on unaccapetable disruption factors or dictated by law.
+- For each criticalsystem in scope, 2 values are assigned:
+  1. RPO (Recovery Point Objective): the acceptable amount of data that is lost.
+  2. RTO (Recovery Time Objective): the amount of time it takes to restore a system.
+     - WRT (Work Recovery Time): amount of time required to configure a recovered system.
+     - MTD (Maximum Tolerable Downtime): amount of time a system can be inoperable before our organization is severaly impacted.
+    
+In other words, we want MTD to always be greater than or equal to RTO + WRT.
+
+![image](https://github.com/user-attachments/assets/59ae88b2-d059-4281-85fe-3853d950ea7b)
+
+![image](https://github.com/user-attachments/assets/6dc0096e-f929-4d5d-9a95-02541bf001e4)
+
+![image](https://github.com/user-attachments/assets/e2a24be6-b809-49e6-b578-653b3d34205b)
+
+![image](https://github.com/user-attachments/assets/76ca5dc5-1739-4b2f-a04a-a86fdd2ec99b)
+
 ## Supply and infrastructure redundancy
 ## Disaster Recovery sites
 ## Other BCP subplans
