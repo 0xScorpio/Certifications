@@ -51,7 +51,7 @@
      
  - **Bottom-Up Programming**
    - Piecing together of systems to build more complex systems. The individual base systems are specified in great detail, then linnked together to form a larger subsystem, until a complete top-level system is formed.
-  - OOP tends to lean toward Bottom-Up; start by developing your objects and then build up.
+   - OOP tends to lean toward Bottom-Up; start by developing your objects and then build up.
 
 
 
