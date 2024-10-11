@@ -83,7 +83,6 @@ Open source software can be protected by a variety of licensing agreements:
 
 ![image](https://github.com/user-attachments/assets/e624b9be-4cfe-4a1f-9bb8-224fa89aebcd)
 
-
  # Software development methodologies
 
 
