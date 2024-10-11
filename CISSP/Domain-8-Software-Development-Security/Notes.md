@@ -142,6 +142,9 @@ A set of values/principles for software development under which requirements and
 
  ![image](https://github.com/user-attachments/assets/1d374587-b5b3-467c-b56c-d161d0d65a3b)
 
+The aim of SDLC is to produce high-quality systems that meet or exceed customer expectations, based on customer requirements, by delivering systems which move through each clearly defined phase, within scheduled time frames and cost estimates.
+
+
  # DevOps and DevSecOps
  # Scaled Agile Frameworks
  # Databases
