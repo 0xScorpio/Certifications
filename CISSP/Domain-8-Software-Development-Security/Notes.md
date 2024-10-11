@@ -85,8 +85,63 @@ Open source software can be protected by a variety of licensing agreements:
 
  # Software development methodologies
 
+In the past, the Waterfall methodology was widely used, however it was a very linear process and does not work well with the iterative nature of software development. To remedy this issue, other methodologies were developed such as Spiral, Sashimi, Agile and Scrum,
 
+- **Waterfall**
+  - Very linear, each phase leads directly into the next.
+  - Unmodified waterfall model does not allow us to go back top a previous phase. Modified waterfall allows us to go ONE step back.
+  - System/Software requirements -> Design -> Implementation -> Testing -> Maintenance
+
+- **Sashimi**
+  - Similar to waterfall, but we always have 2 overlapping phases.
+  - This is a modified waterfall that allows us to go back to the previous phase, but NOT further!
  
+## Agile
+
+A set of values/principles for software development under which requirements and solutions evolve through the collaborative effort of self-organizing cross-functional teams.
+
+![image](https://github.com/user-attachments/assets/afa64b92-145a-4f1e-9870-6f59d6b2c255)
+
+- **Scrum**
+  - Designed for small teams; 10 people
+  - Relies on two-week development cycles called 'sprints'
+  - short daily stand-up meetings
+  - **3 Core Roles**:
+    - **Product Owner**: represents the stakeholders, voice of customer, accountable for ensuring team delivers value.
+    - **Development Team**: responsible for delivering product at each sprint. Cross-functional team of 3-9 individuals.
+    - **Scrum Master**: acts as a buffer between the team and distracting influences. Follows the Scrum framework.
+
+- **XP (Extreme Programming)**
+  - intended to improve software quality and responsiveness to changing customer requirements.
+  - advocates frequent releases in short dev cycles to improve productivity, and checkpoints for new, changing customer requirements if needed.
+  - pair programming, extensive code review.
+  - unit tests on all code.
+  - avoid features until they are needed.
+  - flat management structure.
+  - simple/clear code.
+  - frequent communication with the customer.
+ 
+- **Spiral Model**
+  - Risk-driven process model generator for software projects.
+  - It has 4 phases:
+    - Planning
+    - Risk Analysis
+    - Engineering
+    - Evaluation
+  - A software project repeatedly passes through these phases in iterations (spirals)
+  - Each subsequent spiral builds on the baseline spiral.
+
+- **RAD (Rapid Application Development)**
+  - emphasis on adaptability and adjusting requirements in response to knowledge gained as the project progresses.
+  - Prototypes are often used in place of design specifications.
+  - suited for developing software that is driven by UI requirements.
+ 
+- **Prototyping**
+  - high level of customer involvement
+  - creation of multiple prototypes with limited functionality
+
+ ![image](https://github.com/user-attachments/assets/1d374587-b5b3-467c-b56c-d161d0d65a3b)
+
  # DevOps and DevSecOps
  # Scaled Agile Frameworks
  # Databases
