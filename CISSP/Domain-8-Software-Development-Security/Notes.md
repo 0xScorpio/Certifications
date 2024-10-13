@@ -144,6 +144,18 @@ A set of values/principles for software development under which requirements and
 
 The aim of SDLC is to produce high-quality systems that meet or exceed customer expectations, based on customer requirements, by delivering systems which move through each clearly defined phase, within scheduled time frames and cost estimates.
 
+- Project: **temporary** endeavor, finite start and end, focused onc reating a unique product/service/result.
+- Program: collection of related projects, temporary.
+- Portfolio: collection of projects and programs managed as a group to achieve strategic objectives.
+
+- **IPT (Integrated Product Team)**
+  - a multidisciplinary group of people who are collectively responsible for delivering a defined product or process.
+  - used in complex development programs/projects for review and decision-making.
+  - 3 types of IPTs:
+    - OIPT (Oversight IPT): focus on strategic guidance, program assessment and issue resolution.
+    - WIPT (Working-Level IPT): resolve program issues, determine status, seek opportunities for acquisition reform.
+    - PIPT (Program-level IPT): focus on program execution
+  - IPTs are created focusing attention on understanding the needs/desires of each stakeholder.
 
  # DevOps and DevSecOps
  # Scaled Agile Frameworks
