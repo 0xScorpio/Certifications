@@ -157,9 +157,104 @@ The aim of SDLC is to produce high-quality systems that meet or exceed customer 
     - PIPT (Program-level IPT): focus on program execution
   - IPTs are created focusing attention on understanding the needs/desires of each stakeholder.
 
+- **Source Code Escrow**
+  - deposit of the source code of software with a 3rd party escrow agent.
+
+![Source-Code-Escrow](https://github.com/user-attachments/assets/ee5ede87-5386-4286-b657-8b50cefe7612)
+
+**Software Change and Configuration Management**
+
+![image](https://github.com/user-attachments/assets/b09c64f6-2fe0-4f41-831e-c31af75a5a5b)
+
  # DevOps and DevSecOps
+
+- **DevOps**
+  - co-operation between development, operations and QA.
+  - uses Agile methodology, code is deployed rapidly multiple times a day.
+  - CI/CD (Continuous Integration/Continuous Delivery)
+ 
+- **DevSecOps**
+
+![image](https://github.com/user-attachments/assets/aa52f6b9-3b79-44fc-a998-73c0d9f7e63d)
+
  # Scaled Agile Frameworks
+ 
+SAFe has 3 scaling agility components:
+
+- Teams
+- Programs
+- Portfolios
+
+It organizes **teams** into **Agile Release Trains (ARTs)** (teams of agile teams working together to deliver a specific value) and uses **Program Increments (PI)** to bring together those teams to plan for the next increment, which is typically between 8-12 week periods, where the team produces working, tested software and systems. Finally, it uses **Lean Portfolio Management** to ensure that the portfolio aligns with the enterprise strategy.
+ 
  # Databases
+
+- Columns = Attributes
+- Rows = Tuples
+
+Types of common logical data models:
+
+- Navigational DBs: Hierarchical (Registry Editor, AD), network, graph
+- Relational: must have a unique IDENTIFIER (primary key: parent / foreign key: child)
+- Entity-Relationship
+- Object model (storage for OO languages like C++, Java)
+- Document model
+- Entity-Attribute-Value model
+- Star schema
+
+There are many different ways we can run integrity checks on our databases:
+
+- **Referential Integrity**: every foreign key matches a primary key in the parent table.
+- **Semantic Integrity**: each attribute value is consistent with the attribute data type.
+- **Entity Integrity**: each tuple has a unique primary value that is not null
+
+![image](https://github.com/user-attachments/assets/cc8d4737-78dc-47eb-a13b-49501b535d8d)
+
+- **User-Defined/Business Integrity**
+  - A set of rules specified by the user, which do not belong to the entity, domain and referential integrity categories.
+  - If a database supports these features, it is the responsibility of the **database** to ensure data integrity.
+  - If a database DOES NOT support these features, it is the responsibility of the **applications** to ensure data integrity.
+
+Having a single, well-controlled and well defined data integrity system increases:
+- Stability: one centralized system performs all data integrity operations
+- Performance: all operations are performed in the same tier as the consistency model
+- Re-usability: all apps benefit from a single centralized data integrity system
+- Maintainability: one centralized system for all data integrity administration
+
+![image](https://github.com/user-attachments/assets/cdb43e19-5a5e-440f-b72f-9b32343f7f9a)
+
+**Database Normalization**
+- **1st Normal Form**: divide base data into tables, assign primary key to most/all tables.
+- **2nd Normal Form**: move data that is partially dependent on the primary key toa nother table.
+- **3rd Normal Form**: remove data that is not dependent on the primary key.
+
+**Database Views**
+- DB tables, when queried, what we see is called the database view.
+
+**Data Dictionary**
+- contains the metadata of DB tables
+- **Database Schema**
+  - describes attributes and values of the DB tables
+
+**Database Query Language**
+- **Data Definition Language (DDL)**: updates structures in a database (CREATE, ALTER, DROP)
+- **Data Manipulation Language (DML)**: updates data in a database (SELECT, DELETE, INSERT, UPDATE)
+
+- **Low Coupling**: the degree to which the components are loosely connected and can function independently.
+- **High Cohesion**: the degree to which a component does only one thing well, with a clear purpose and scope.
+
+> [!TIP]
+> **Low coupling** often correlates with **high cohesion**, and vice versa.
+> Low coupling is a sign of a well-structured computer system, when combined with high cohesion, supports the general
+> goals of high reliability and maintainability.
+
+- **Application Programming Interfaces**
+ - **Object Request Broker (ORB)**
+   - middleware which allows program calls from one computer to another, providing location transparency via RPC.
+   - Common object brokers include .NET remoting, COM, DCOM and CORBA:
+     - **COM (Component Object Model)**
+       - language-neutral
+   
  # OWASP
  # Software Vulnerabilities, Attacks and Mitigations
  # Maturity Models
