@@ -382,8 +382,24 @@ Built by OWASP, with 5 pillars:
 ![image](https://github.com/user-attachments/assets/6a061331-3b25-4a2e-899e-0eec65424634)
 
  # Buying software from other companies
+When buying software from vendors, either COTS (commercial-off-the-shelf) or custom built software, we need to ensure it is as secure as we need it to be. Ignore marketing claims and do our due care and due diligence, and use outside council if need be.
 
+We can use a **requirements traceability matrix** to divide requirements into "must have, nice to have, maybe have" for COTS.
 
- 
+Custom-Developed 3rd party products are much more expensive than COTS.
+
+![image](https://github.com/user-attachments/assets/45179b10-75d0-4737-8134-5ef60bd91278)
+
  # Software Composition Analysis
+
+Tools to identify external components in our software and check those for vulnerabilities and issues.
+
+Benefits of SCA:
+- Early risk detection
+- Continuous monitoring
+- Reduced legal risk
+ 
  # Artificial Intelligence
+- Expert systems: knowledge base and inference engine
+- ANN (Artifical Neural Networks)
+- Genetic Programming (GP): a technique where programs are encoded as a set of genes that are then modified using an evolutionary algorithm.
