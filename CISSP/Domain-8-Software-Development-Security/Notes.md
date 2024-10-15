@@ -6,7 +6,6 @@
 - [Scaled Agile Frameworks](#scaled-agile-frameworks)
 - [Databases](#databases)
 - [OWASP](#owasp)
-- [Software Vulnerabilities, Attacks and Mitigations](#software-vulnerabilities-attacks-and-mitigations)
 - [Maturity Models](#maturity-models)
 - [Buying software from other companies](#buying-software-from-other-companies)
 - [Software Composition Analysis](#software-composition-analysis)
@@ -272,8 +271,119 @@ Having a single, well-controlled and well defined data integrity system increase
        - Durability: once transactions are committed, they must be preserved.
        
  # OWASP
- # Software Vulnerabilities, Attacks and Mitigations
+
+### Broken Access Control
+A security logic flaw that allows unauthorized users access to modify/delete data they shouldn''t have access to.
+
+Mitigations:
+- Deny by default
+- Limit user rights
+- RBAC
+- Strong passwords
+- MFA
+- ACLs
+- proper user/session management
+
+### Cryptographic Failures
+Mitigations:
+- Do not use deprecated encryption
+- No cleartext storage
+- Proper implementation of protocols/keys
+- No caching for sensitive data
+
+### Injection
+Any code injected into user forms.
+
+Mitigations:
+- Stronger input validation
+- Data type limitations on input fields
+- Input length limitations
+- **Commmon Gateway Interface**: standard protocol for web servers to execute programs that generates web pages dynamically.
+  - CGIs can help separate the untrusted user from the trusted user.
+
+### Insecure Design 
+Mitigations:
+- Software developers need to use secure design patterns, reference only secure architectures/libraries/functions.
+- Before finalizing any application design, use a red team for threat modeling and penetration testing.
+
+### Security Misconfiguration
+Databases configured wrong / Unchanged Default settings and access / imaged version without updated patches / unecessary features enabled or installed.
+
+Mitigations:
+- Server hardening
+- Proper patching
+- Disable/reconfigure security defaults
+
+### Identification and Authentication failures
+Sessions either take too long to expire or do not expire at all.
+
+Mitigations:
+- MFA
+- Session expiring periods
+- Non-predictable sessions
+- No plaintext storage
+- Bruteforce alerts
+
+### Server-Side Request Forgery
+Web apps trigger requests between HTTP servers to fetch remote resources, such as software updates, or importing metadata from a URL to another web app. If not implemented correctly, can make a server vulnerable to SSRF. An attacker can change the parameter value of a vulnerable app to create/control requests from the server.
+
+Mitigations:
+- Network layer: segment remote resources access functionality, enforce deny-by-default to block non-essential traffic.
+- App layer: Sanitize and input-validation of data. Enforce URL, port and destination with whitelists. Disable HTTP redirections.
+
+### CSRF
+
+![image](https://github.com/user-attachments/assets/7b7bcf7e-221f-4948-94e1-17d228cc004a)
+
+> [!IMPORTANT]
+> XSS exploits the trust that the user has with a particular site.
+> CSRF exploits the trust that a site has with a user's browser.
+
+![image](https://github.com/user-attachments/assets/edb339f7-2668-4614-84c2-6552c34f2453)
+
  # Maturity Models
+
+- **Capability Maturity Model (focus on Software Development)**
+  - There are 5 levels to describe where an organization is, regarding their maturity on reaching the next level of processes, practices and performance optimization:
+    - **Level 1: Initial**: Processes at this level are undocumented, constant dynamic change, driven by ad-hoc decisions.
+    - **Level 2: Repeatable**: Some processes are repeatable, possible consistent results. Existing processes should be maintained.
+    - **Level 3: Defined**: established standard documentation of processes, not repeated enough for users to become competent.
+    - **Level 4: Managed/Capable**: Processes have metrics, suitability of processes in multiple environments tested, users have decent experience with processes and demonstrated competence.
+    - **Level 5: Optimizing**: Processes focus on continually improving process performance. Addresses statistical common causes of process variation to improve overall performance.
+   
+![image](https://github.com/user-attachments/assets/36998dd1-d278-4388-b788-a9e36b449328)
+
+- **Capability Maturity Model Integration (CMMI, can be used within entire organization)**
+  - 3 main components:
+    1. Maturity levels
+    2. Process Areas: areas of improvements (process/project management, engineering, support)
+    3. Practice Areas: guidance for improvement (generic, specific)
+
+ ![image](https://github.com/user-attachments/assets/0ca4cff7-64ca-43cb-a274-e252e607ebfe)
+
+- **SAMM (Software Assurance Maturity Model)**
+
+![image](https://github.com/user-attachments/assets/b4a318c2-7869-4818-9f2b-d83832e051f8)
+
+Built by OWASP, with 5 pillars:
+- Governance
+- Design
+- Implementation
+- Verification
+- Operations
+
+### Acceptance Testing
+- **User Acceptance Testing**
+- **Operations Acceptance Testing:** tested by sysadmin, backups, DR, checked for patches/vulnerabilities?
+- **Contract Acceptance Testing**: does it fulfil contract specs?
+- **Compliance Acceptance Testing**: compliance with rules, regulations and laws of our industry?
+- **Compatibility/Production Testing**: software interface as expected with other apps/systems?
+
+![image](https://github.com/user-attachments/assets/6a061331-3b25-4a2e-899e-0eec65424634)
+
  # Buying software from other companies
+
+
+ 
  # Software Composition Analysis
  # Artificial Intelligence
