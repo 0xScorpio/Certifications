@@ -253,8 +253,24 @@ Having a single, well-controlled and well defined data integrity system increase
    - middleware which allows program calls from one computer to another, providing location transparency via RPC.
    - Common object brokers include .NET remoting, COM, DCOM and CORBA:
      - **COM (Component Object Model)**
-       - language-neutral
-   
+       - language-neutral way of implementing objects to communicate between different programming languages.
+       - not used as often nowadays
+     - **DCOM (Distributed Component Object Model)**
+       - networked sequel to COM, which adds to support communication among objects on different computers (LAN, WAN, Internet)
+       - application is distributed at locations that is closest to the customer.
+       - includes Object Linking and Embedding (OLE); a way to link documents to other documents.
+       - DCOM being replace by Microsoft's .NET which can interoperate with DCOM.
+     - **CORBA (Common Object Request Broker Architecture)**
+       - Open vendor-neutral ORB standard, designed to support communication of systems that are deployed on diverse platforms.
+       - enables collaboration between systems of different OS, hardware and languages using an object-oriented model.
+     - **OOAD (Object-Oriented Analysis and Design)**
+       - constant iteration, outputs of activities, models and design for OOD will evolve based on risks and business value.
+     - **ACID (Atomicity, Consistency, Isolation, Durability)**
+       - Atomicity: All or nothing / if any part of the transaction fails, the entire transaction fails.
+       - Consistency: DB must be consistent with the rules, before and after the transaction.
+       - Isolation: a transaction must be completed before another transaction can modify the data.
+       - Durability: once transactions are committed, they must be preserved.
+       
  # OWASP
  # Software Vulnerabilities, Attacks and Mitigations
  # Maturity Models
