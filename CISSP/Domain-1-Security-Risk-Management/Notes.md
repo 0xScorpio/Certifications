@@ -161,7 +161,7 @@ While an organization can do nothing if their Trade Secret is discovered, HOW it
 - **CFAA: Computer Fraud and Abuse Act, Title 18 Section 1030**
   - Used to prosecute computer crimes.
 - **GLBA: Gramm-Leach-Bliley Act**
-  - Applies to financial institutions: driven by the Federal Financial Institutions.
+  - Applies to financial institutions: requires financial institutions to explain how they share and protect their customers' private information.
 - **SOX: Sarbanes-Oxley Act of 2002**
   - Directly related to the accounting scandals in the late 90s.
 - **PCI-DSS: Payment Card Industry Data Security Standard**
